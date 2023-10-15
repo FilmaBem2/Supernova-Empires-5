@@ -1,11 +1,8 @@
 {
-  "enderchests": {
-    "hud": true
-  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
-    "harvest_tool.show_unbreakable": false,
+    "harvest_tool.show_unbreakable": true,
     "animal_owner": true,
     "animal_owner.fetch_names": true,
     "harvest_tool.effective_tool": true,
@@ -37,9 +34,10 @@
     "beehive": true,
     "item_storage.detailed_amount": 54,
     "player_head": true,
-    "block_states": false,
+    "block_states": true,
     "lectern": true,
     "entity_armor": true,
+    "harvest_tool.creative": false,
     "horse_stats": true,
     "item_tooltip": true,
     "entity_health": true,
@@ -53,22 +51,16 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "endertanks": {
-    "hud.basic": true,
-    "hud": true,
-    "hud.status": true,
-    "hud.contents": true
+  "immersiveengineering": {
+    "multiblock_icon": true
   },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
     "block_face": false,
     "coordinates": false,
-    "registry_name": "OFF",
+    "registry_name": "ADVANCED_TOOLTIPS",
     "mod_name": true
-  },
-  "mcjtylib": {
-    "jadeaddons": true
   },
   "ae2": {
     "part_icon": true,
@@ -104,13 +96,15 @@
     "tesseract": true,
     "remove_default": true
   },
-  "jadeaddons": {
-    "equipment_requirement": ""
-  },
-  "shetiphiancore": {
-    "hud.rgb16": true,
-    "hud": true,
-    "hud.redstone": true
+  "mekanism": {
+    "infuse_type": true,
+    "gas": true,
+    "remove_builtin": true,
+    "pigment": true,
+    "fluid": true,
+    "slurry": true,
+    "energy": true,
+    "tooltip_renderer": true
   },
   "easy_villagers": {
     "villager": true,
@@ -122,20 +116,6 @@
   },
   "pipez": {
     "pipe": true
-  },
-  "create": {
-    "filter": true,
-    "goggles.requires_goggles": true,
-    "goggles": true,
-    "copper_backtank": true,
-    "blaze_burner": true,
-    "exact_block": true,
-    "crafting_blueprint": true,
-    "goggles.detailed": false,
-    "placard": true
-  },
-  "waystones": {
-    "waystone": true
   },
   "camera": {
     "image_frame": true

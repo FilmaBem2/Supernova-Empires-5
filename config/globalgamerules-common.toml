@@ -29,20 +29,13 @@
 		tnt_explosion_drop_decay = false
 
 	[gamerules.misc]
-		#Controls the maximum number of blocks changed when using /clone, /fill, or /fillbiome.
-		#Range: > 0
-		command_modification_block_limit = 32768
-		#Whether certain sound events are heard by all players regardless of location.
-		global_sound_events = true
-		#The maximum length of a chain of commands that can be executed during one tick. Applies to command blocks and functions.
-		#Range: > 0
-		max_command_chain_length = 65536
-		#Whether the debug screen shows all or reduced information; and whether the effects of F3+B (entity hitboxes) and F3+G (chunk boundaries) are shown.
-		reduced_debug_info = false
 		#Non Vanilla gamerule: 'canPickupClaimedItems'
 		can_pickup_claimed_items = false
 		#Non Vanilla gamerule: 'claimedMobGriefing'
 		claimed_mob_griefing = false
+		#Controls the maximum number of blocks changed when using /clone, /fill, or /fillbiome.
+		#Range: > 0
+		command_modification_block_limit = 32768
 		#Non Vanilla gamerule: 'doClaimedBlockBreaking'
 		do_claimed_block_breaking = false
 		#Non Vanilla gamerule: 'doClaimedBlockExplosions'
@@ -55,12 +48,19 @@
 		do_claimed_damage_entities = false
 		#Non Vanilla gamerule: 'doClaimedEntityInteractions'
 		do_claimed_entity_interactions = false
+		#Whether certain sound events are heard by all players regardless of location.
+		global_sound_events = true
 		#Non Vanilla gamerule: 'maxChunkLoaded'
 		#Range: > 0
 		max_chunk_loaded = 64
 		#Non Vanilla gamerule: 'maxClaimedChunks'
 		#Range: > 0
 		max_claimed_chunks = 1089
+		#The maximum length of a chain of commands that can be executed during one tick. Applies to command blocks and functions.
+		#Range: > 0
+		max_command_chain_length = 65536
+		#Whether the debug screen shows all or reduced information; and whether the effects of F3+B (entity hitboxes) and F3+G (chunk boundaries) are shown.
+		reduced_debug_info = false
 
 	[gamerules.player]
 		#Whether the server should skip checking player speed when the player is wearing elytra. Often helps with jittering due to lag in multiplayer.
@@ -83,7 +83,7 @@
 		natural_regeneration = true
 		#What percentage of players must sleep to skip the night.
 		#Range: > 0
-		players_sleeping_percentage = 50
+		players_sleeping_percentage = 100
 		#The number of blocks outward from the world spawn coordinates that a player spawns in when first joining a server or when dying without a personal spawnpoint. Has no effect on servers where the default game mode is Adventure.
 		#Range: > 0
 		spawn_radius = 10
@@ -143,7 +143,7 @@
 [difficulty]
 	#If the difficulty should be set on world load
 	#If true difficulty changes in game will also be saved to the config
-	set_difficulty = true
+	set_difficulty = false
 	#The difficulty to set if 'set_difficulty' is true, respects if the difficulty is locked or not for the world
 	#Allowed Values: PEACEFUL, EASY, NORMAL, HARD
 	difficulty = "NORMAL"

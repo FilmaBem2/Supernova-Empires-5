@@ -1,16 +1,10 @@
 {
 	"basics": {
-		"favorites": [
-			"{mode:\"NOT_SET\",type:\"roughlyenoughitems:gamemode\"}",
-			"{type:\"roughlyenoughitems:weather\",weather:\"CLEAR\"}",
-			"{type:\"roughlyenoughitems:weather\",weather:\"RAIN\"}",
-			"{type:\"roughlyenoughitems:weather\",weather:\"THUNDER\"}",
-			"{mode:\"NOT_SET\",type:\"roughlyenoughitems:time\"}"
-		],
+		"favorites": [],
 		"hiddenFavorites": [],
 		"displayHistory": [],
 		// Declares whether cheating mode is on.
-		"cheating": "WHEN_CREATIVE",
+		"cheating": false,
 		"favoritesEnabled": true,
 		"keyBindings": {
 			"recipeKeybind": {
@@ -106,7 +100,7 @@
 		},
 		"search": {
 			// Declares whether search time should be debugged.
-			"debugSearchTimeRequired": true,
+			"debugSearchTimeRequired": false,
 			// Declares whether REI should search async.
 			"asyncSearch": true,
 			// Declares how many entries should be grouped one async search.
@@ -131,15 +125,15 @@
 			// Declares whether arrows in containers should be clickable.
 			"clickableRecipeArrows": true,
 			"registerRecipesInAnotherThread": true,
-			"newFastEntryRendering": false,
+			"newFastEntryRendering": true,
 			"cachingFastEntryRendering": false,
-			"cachingDisplayLookup": false
+			"cachingDisplayLookup": true
 		}
 	},
 	"appearance": {
-		"recipeScreenType": "ORIGINAL",
+		"recipeScreenType": "UNSET",
 		// Declares the appearance of REI windows.
-		"theme": "DARK",
+		"theme": "LIGHT",
 		"layout": {
 			// Declares the position of the search field.
 			"searchFieldLocation": "CENTER",
@@ -168,7 +162,7 @@
 		// Declares whether mob effects should be on the left side instead of the right side.
 		"leftSideMobEffects": false,
 		// Declares whether subsets is enabled.
-		"isSubsetsEnabled": true,
+		"isSubsetsEnabled": false,
 		"allowInventoryHighlighting": true,
 		"itemCheatingMode": "REI_LIKE"
 	}

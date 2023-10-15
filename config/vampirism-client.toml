@@ -20,7 +20,7 @@
 		levelOffsetX = 0
 		#Y-Offset of the level indicator from the bottom in pixels
 		#Range: 0 ~ 270
-		levelOffsetY = 47
+		levelOffsetY = 0
 		#Render skill menu button in inventory
 		skillButtonEnable = true
 		#Force the guiSkillButton to the following x position from the center of the inventory, default value is 125

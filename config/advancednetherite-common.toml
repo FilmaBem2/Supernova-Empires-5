@@ -34,7 +34,7 @@
 		#Configure properties related to Netherite-Diamond armor here
 		[common.armor_perks.netherite_diamond_armor]
 			#If true, Phantoms behave neutral towards players wearing Netherite-Diamond armor. True by default.
-			diamondPhantomPassiveArmor = false
+			diamondPhantomPassiveArmor = true
 			#If true, Piglins behave neutral towards players wearing Netherite-Diamond armor. True by default.
 			diamondPiglinPassiveArmor = true
 			#If true, Endermen behave neutral towards players wearing Netherite-Diamond armor. True by default.
