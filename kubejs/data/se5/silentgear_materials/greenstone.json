@@ -1,0 +1,56 @@
+{
+  "availability": {
+    "tier": 2,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "kubejs:greenstone"
+    }
+  },
+  "name": {
+    "text": "Greenstone"
+  },
+  "stats": {
+    "tip": {
+      "durability": {
+        "add": 128.0
+      },
+      "armor_durability": {
+        "add": 4.0
+      },
+      "harvest_level": {
+        "max": 4.0
+      },
+      "harvest_speed": {
+        "add": 5.0
+      },
+      "melee_damage": {
+        "add": 1.0
+      },
+      "ranged_speed": {
+        "add": 5.8
+      },
+      "rarity": {
+        "add": 8.5
+      }
+    }
+  },
+  "traits": {
+    "tip": [
+      {
+        "name": "fbmods5:synergy_booster",
+        "level": 1
+      },
+      {
+        "name": "fbmods5:power",
+        "level": 1
+      }
+    ]
+  }
+}

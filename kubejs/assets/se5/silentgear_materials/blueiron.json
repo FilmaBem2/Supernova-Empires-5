@@ -1,0 +1,41 @@
+{
+    "main/all": [
+      {
+        "texture": "fbmods5:blueiron"
+      },
+      {
+        "texture": "fbmods5:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal"
+      }
+    ],
+    "rod/all": [
+      {
+        "texture": "fbmods5:blueiron"
+      }
+    ],
+    "rod/part": [
+      {
+        "texture": "fbmods5:blueiron"
+      }
+    ],
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_sharp"
+      }
+    ],
+    "tip/part": [
+      {
+        "texture": "silentgear:tip_base"
+      },
+      {
+        "texture": "silentgear:tip"
+      },
+      {
+        "texture": "silentgear:tip_shine"
+      }
+    ]
+  }

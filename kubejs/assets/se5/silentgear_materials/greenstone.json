@@ -1,0 +1,19 @@
+{
+    
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_sharp"
+      }
+    ],
+    "tip/part": [
+      {
+        "texture": "fbmods5:tip_base_green"
+      },
+      {
+        "texture": "fbmods5:tip_green"
+      },
+      {
+        "texture": "fbmods5:tip_shine_green"
+      }
+    ]
+  }

@@ -1,0 +1,15 @@
+{
+  "main/all": [
+    {
+      "texture": "fbmods5:nether_infused_fbmodium"
+    },
+    {
+      "texture": "fbmods5:_highlight"
+    }
+  ],
+  "main/fragment": [
+    {
+      "texture": "silentgear:metal"
+    }
+  ]
+}

@@ -50,6 +50,16 @@ ServerEvents.recipes(event => {
         {
           A: 'minecraft:leather'
         }
-    )
+    ),
+    
+    // Flint and steel
+
+    event.shapeless(
+      Item.of('minecraft:flint_and_steel'),
+      [ 
+        'minecraft:flint',
+        '#forge:ingots/steel'
+      ]
+  )
 
 })

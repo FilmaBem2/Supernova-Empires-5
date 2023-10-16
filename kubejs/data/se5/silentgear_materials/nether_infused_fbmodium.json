@@ -1,0 +1,55 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 7,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "kubejs:nether_infused_fbmodium_ingot"
+    }
+  },
+  "name": {
+    "text": "Nether Infused Fbmodium"
+  },
+  "stats": {
+    "main": {
+      "durability": 100000.0,
+      "armor_durability": 100000.0,
+      "enchantability": 100.0,
+      "rarity": 60.0,
+      "chargeability": 1.4,
+      "harvest_level": 7.0,
+      "harvest_speed": 10000.0,
+      "melee_damage": 10000.0,
+      "magic_damage": 100.0,
+      "attack_speed": 100.0,
+      "ranged_damage": 1000.0,
+      "ranged_speed": 100,
+      "armor": 100000.0,
+      "armor_toughness": 10000.0,
+      "magic_armor": 10000.0
+    }
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "fbmods5:nether_infused_fbmodium"
+      },
+      {
+        "texture": "fbmods5:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+    "availability": {
+      "tier": 2,
+      "categories": [
+        "metal"
+      ],
+      "visible": true,
+      "gear_blacklist": [],
+      "can_salvage": true
+    },
+    "crafting_items": {
+      "main": {
+        "item": "kubejs:light_bluestone"
+      }
+    },
+    "name": {
+      "text": "Light Bluestone"
+    },
+    "stats": {
+      "tip": {
+        "durability": {
+          "add": 128.0
+        },
+        "armor_durability": {
+          "add": 4.0
+        },
+        "harvest_level": {
+          "max": 3.0
+        },
+        "harvest_speed": {
+          "add": 3.0
+        },
+        "melee_damage": {
+          "add": 1.0
+        },
+        "ranged_speed": {
+          "add": 3.2
+        },
+        "rarity": {
+          "add": 8.0
+        }
+      }
+    },
+    "traits": {
+      "tip": [
+        {
+          "name": "fbmods5:light",
+          "level": 2
+        }
+      ]
+    }
+  }

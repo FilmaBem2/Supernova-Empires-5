@@ -1,0 +1,73 @@
+{
+    "type": "silentgear:enchantment_trait",
+    "max_level": 1,
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "harvest_tool"
+      },
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "tool"
+      },
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "armor"
+      },
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "weapon"
+      },
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "curio"
+      }
+    ],
+    "name": {
+      "text": "Ultra Power"
+    },
+    "description": {
+      "text": "Make your tools stronger"
+    },
+    "enchantments": {
+      "harvest_tool": [
+        {
+          "enchantment": "minecraft:power",
+          "level": [
+            50
+          ]
+        },
+        {
+          "enchantment": "minecraft:sharpness",
+          "level": [
+            50
+          ]
+        },
+        {
+          "enchantment": "minecraft:smite",
+          "level": [
+            50
+          ]
+        },
+        {
+          "enchantment": "minecraft:fire_aspect",
+          "level": [
+            50
+          ]
+        },
+        {
+            "enchantment": "minecraft:flame",
+            "level": [
+              50
+            ]
+        },
+        {
+            "enchantment": "minecraft:sweeping_edge",
+            "level": [
+              50
+            ]
+          }
+
+      ]
+    }
+  }
