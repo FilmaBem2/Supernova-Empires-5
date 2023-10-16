@@ -4,7 +4,7 @@
 	[energy.alloySmelter]
 		#The base energy capacity in uI.
 		#Range: > 1
-		capacity = 64000
+		capacity = 6400000
 		#The base energy consumption in uI/t.
 		#Range: > 1
 		usage = 20
@@ -15,7 +15,7 @@
 	[energy.crafter]
 		#The base energy capacity in uI.
 		#Range: > 1
-		capacity = 64000
+		capacity = 6400000
 		#The energy cost in uI for a crafting recipe.
 		#Range: > 1
 		usage = 3200
@@ -23,7 +23,7 @@
 	[energy.impulseHopper]
 		#The base energy capacity in uI.
 		#Range: > 1
-		capacity = 64000
+		capacity = 6400000
 		#The base energy consumption in uI/t.
 		#Range: > 1
 		usage = 16
@@ -31,7 +31,7 @@
 	[energy.poweredSpawner]
 		#The base energy capacity in uI.
 		#Range: > 1
-		capacity = 100000
+		capacity = 10000000
 		#The base energy consumption in uI/t.
 		#Range: > 1
 		usage = 20
@@ -39,15 +39,15 @@
 	[energy.sagMill]
 		#The base energy capacity in uI.
 		#Range: > 1
-		capacity = 64000
+		capacity = 6400000
 		#The base energy consumption in uI/t.
 		#Range: > 1
-		usage = 20
+		usage = 200
 
 	[energy.slicer]
 		#The base energy capacity in uI.
 		#Range: > 1
-		capacity = 100000
+		capacity = 10000000
 		#The base energy consumption in uI/t.
 		#Range: > 1
 		usage = 30
@@ -55,26 +55,26 @@
 	[energy.soulBinder]
 		#The base energy capacity in uI.
 		#Range: > 1
-		capacity = 128000
+		capacity = 12800000
 		#The base energy consumption in uI/t.
 		#Range: > 1
-		usage = 60
+		usage = 600
 
 	[energy.stirlingGenerator]
 		#The base energy capacity in uI.
 		#Range: > 1
-		capacity = 64000
+		capacity = 6400000
 		#The base number of 'burn ticks' performed per machine tick.
 		#Range: 0.001 ~ 1.7976931348623157E308
 		burnSpeed = 0.375
 		#The base amount of energy produced in uI/t.
 		#Range: > 1
-		generation = 40
+		generation = 400
 
 	[energy.paintingMachine]
 		#The base energy capacity in uI.
 		#Range: > 1
-		capacity = 64000
+		capacity = 6400000
 		#The base energy consumption in uI/t.
 		#Range: > 1
 		usage = 30
@@ -94,28 +94,28 @@
 	[energy.capacitor_bank_capacity]
 		#Capacity for capacitor banks
 		#Range: > 1
-		basic = 500000
+		basic = 50000000
 		#Range: > 1
-		advanced = 2000000
+		advanced = 200000000
 		#Range: > 1
-		vibrant = 4000000
+		vibrant = 400000000
 
 	[energy.wiredCharger]
 		#The base energy capacity in uI.
 		#Range: > 1
-		capacity = 128000
+		capacity = 12800000
 		#The base energy consumption in uI/t.
 		#Range: > 1
 		usage = 64
 
 	[energy.mob_generator]
 		#Range: > 1
-		capacity = 100000
+		capacity = 10000000
 
 	[energy.drain]
 		#The base energy capacity in uI.
 		#Range: > 1
-		capacity = 64000
+		capacity = 640000
 		#The base energy consumption in uI/t.
 		#Range: > 1
 		usage = 10
