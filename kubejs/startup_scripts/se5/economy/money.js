@@ -1,5 +1,8 @@
 
 StartupEvents.registry('item', event => {
+
+    // Money
+    
     event.create('one_dollar').displayName('1$')
     event.create('five_dollar').displayName('5$')
     event.create('ten_dollar').displayName('10$')
@@ -10,4 +13,5 @@ StartupEvents.registry('item', event => {
     event.create('one_thousand_dollar').displayName('1000$')
     event.create('five_thousand_dollar').displayName('5000$')
     event.create('ten_thousand_dollar').displayName('10000$')
+
 })

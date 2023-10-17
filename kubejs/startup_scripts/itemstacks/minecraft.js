@@ -48,4 +48,5 @@ ItemEvents.modification(event => {
     event.modify('minecraft:totem_of_undying', item => {
         item.maxStackSize = 64
     })
-  })
+
+})
