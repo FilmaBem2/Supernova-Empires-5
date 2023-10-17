@@ -9,8 +9,8 @@ Platform.mods.kubejs.name = 'Supernova Empires 5'
 
 Platform.mods.matc.name = 'Mystical Agriculture'
 Platform.mods.mysticalagriculture.name = 'Mystical Agriculture'
-Platform.mods.mysticalagraditions.name = 'Mystical Agriculture'
-Platform.mods.mysticaladpatations.name = 'Mystical Agriculture'
+Platform.mods.mysticalagradditions.name = 'Mystical Agriculture'
+Platform.mods.mysticaladaptations.name = 'Mystical Agriculture'
 
 // Mekanism
 
@@ -33,4 +33,4 @@ Platform.mods.rftoolsutility.name = 'RF Tools'
 
 Platform.mods.ae2.name = 'AE2 - Applied Energistics 2'
 Platform.mods.ae2wtlib.name = 'AE2 - Applied Energistics 2'
-
+Platform.mods.appmek.name = 'AE2 - Applied Energistics 2'
