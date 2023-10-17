@@ -29,6 +29,22 @@ ServerEvents.recipes(event => {
           B: 'minecraft:glowstone_dust',
           C: 'minecraft:diamond'
         }
+    ),
+
+    // Machine Casing
+
+    event.shaped(
+        Item.of('kubejs:machine_casing'),
+        [ 
+          'ABA', 
+          'BCB',
+          'ABA'  
+        ],
+        {
+          A: '#forge:ingots/steel', 
+          B: '#forge:ingots/osmium',
+          C: '#forge:ingots/iron'
+        }
     )
 
 })
