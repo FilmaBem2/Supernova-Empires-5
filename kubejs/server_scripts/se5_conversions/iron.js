@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         'kubejs:transmutation_stone',
         '8x #forge:ingots/iron'
       ]
-    ),
+    ).keepIngredient('kubejs:transmutation_stone'),
 
     // Gold to iron
 
@@ -19,6 +19,6 @@ ServerEvents.recipes(event => {
           'kubejs:transmutation_stone',
           '#forge:ingots/gold'
         ]
-    )
+    ).keepIngredient('kubejs:transmutation_stone')
 
 })

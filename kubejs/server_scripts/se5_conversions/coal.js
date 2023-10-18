@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         'kubejs:transmutation_stone',
         '4x minecraft:charcoal'
       ]
-    ),
+    ).keepIngredient('kubejs:transmutation_stone'),
 
     // Coal to Charcoal
 
@@ -19,6 +19,6 @@ ServerEvents.recipes(event => {
           'kubejs:transmutation_stone',
           'minecraft:coal'
         ]
-    )
+    ).keepIngredient('kubejs:transmutation_stone')
 
 })

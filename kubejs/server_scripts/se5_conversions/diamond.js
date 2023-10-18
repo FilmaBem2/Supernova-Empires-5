@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         'kubejs:transmutation_stone',
         '2x #forge:gems/diamond'
       ]
-    ),
+    ).keepIngredient('kubejs:transmutation_stone'),
 
     // Emerald to Diamond
 
@@ -19,6 +19,6 @@ ServerEvents.recipes(event => {
           'kubejs:transmutation_stone',
           '#forge:gems/emerald'
         ]
-    )
+    ).keepIngredient('kubejs:transmutation_stone')
 
 })

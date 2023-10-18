@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         'kubejs:transmutation_stone',
         '4x #forge:ingots/gold'
       ]
-    ),
+    ).keepIngredient('kubejs:transmutation_stone'),
 
     // Diamond to Gold
 
@@ -19,6 +19,6 @@ ServerEvents.recipes(event => {
           'kubejs:transmutation_stone',
           '#forge:gems/diamond'
         ]
-    )
+    ).keepIngredient('kubejs:transmutation_stone')
 
 })

@@ -9,6 +9,6 @@ ServerEvents.recipes(event => {
         'kubejs:transmutation_stone',
         '4x #forge:ingots/iron'
       ]
-  )
+  ).keepIngredient('kubejs:transmutation_stone')
 
 })
