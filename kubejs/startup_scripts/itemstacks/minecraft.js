@@ -7,6 +7,12 @@ ItemEvents.modification(event => {
       item.maxStackSize = 64
     })
 
+    // Bucket
+
+    event.modify('minecraft:bucket', item => {
+        item.maxStackSize = 64
+      })
+
     // Egg
 
     event.modify('minecraft:egg', item => {
