@@ -13,4 +13,8 @@ ServerEvents.recipes(event => {
     
     event.remove({ id: 'rftoolsbase:machine_frame' })
 
+    // Extended Crafting
+
+    event.remove({ id: 'extendedcrafting:black_iron_ingot'})
+
 })
