@@ -47,4 +47,33 @@ ServerEvents.recipes(event => {
         }
     )
 
+    // Universal Upgrade Cover
+
+    event.custom({
+      type: 'extendedcrafting:shaped_ender_crafter',
+      pattern: [
+        'ABA',
+        'CDC',
+        'ABA'
+      ],
+      key: {
+        A: {
+          tag: 'forge:ingots/redstone_alloy'
+        },
+        B: {
+          tag: 'forge:ingots/steel'
+        },
+        C: {
+          tag: 'forge:ingots/dark_steel'
+        },
+        D: {
+          tag: 'forge:ingots/osmium'
+        }
+      },
+      result: {
+        item: 'kubejs:universal_upgrade_cover'
+      }
+    })
+
+
 })
