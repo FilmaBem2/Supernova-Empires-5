@@ -18,6 +18,10 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'mekanism:upgrade/gas' })
     event.remove({ id: 'mekanism:upgrade/anchor' })
     event.remove({ id: 'mekanism:upgrade/stone_generator' })
+    event.remove({ id: 'mekanism:tier_installer/basic' })
+    event.remove({ id: 'mekanism:tier_installer/advanced' })
+    event.remove({ id: 'mekanism:tier_installer/elite' })
+    event.remove({ id: 'mekanism:tier_installer/ultimate' })
 
     // RF Tools
     
