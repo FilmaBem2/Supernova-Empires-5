@@ -119,16 +119,16 @@ ServerEvents.recipes(event => {
                 tag: 'forge:ingots/constantan'
             },
             {
-                item: 'kubejs:fbmodium_ingot'
+                tag: 'forge:ingots/fbmodium'
             },
             {
-                item: 'kubejs:nether_infused_fbmodium_ingot'
+                tag: 'forge:ingots/nether_fbmodium'
             },
             {
-                item: 'kubejs:end_infused_fbmodium_ingot'
+                tag: 'forge:ingots/end_fbmodium'
             },
             {
-                item: 'kubejs:ultimate_infused_fbmodium_ingot'
+                tag: 'forge:ingots/ultimate_fbmodium'
             }
             
         ],
