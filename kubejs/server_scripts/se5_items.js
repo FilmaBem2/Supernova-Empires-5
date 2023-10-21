@@ -75,5 +75,69 @@ ServerEvents.recipes(event => {
       }
     })
 
+    // Universal Upgrade Core
+
+    event.custom({
+      type: 'extendedcrafting:shaped_ender_crafter',
+      pattern: [
+        'ABA',
+        'CDE',
+        'ABA'
+      ],
+      key: {
+        A: {
+          item: 'extendedcrafting:the_ultimate_ingot'
+        },
+        B: {
+          tag: 'forge:gems/certus_quartz'
+        },
+        C: {
+          item: 'extendedcrafting:flux_star'
+        },
+        D: {
+          item: 'mysticalagradditions:insanium_ingot'
+        },
+        E: {
+          item: 'extendedcrafting:ender_star'
+        }
+      },
+      result: {
+        item: 'kubejs:universal_upgrade_core',
+        count: 16
+      }
+    })
+
+    // Universal Upgrade
+
+    event.custom({
+      type: 'extendedcrafting:shaped_table',
+      pattern: [
+        'AAAAAAAAA',
+        'ABBBBBBBA',
+        'ABBBBBBBA',
+        'ABBCCCBBA',
+        'ABBCBCBBA',
+        'ABBCCCBBA',
+        'ABBBBBBBA',
+        'ABBBBBBBA',
+        'AAAAAAAAA'
+      ],
+      key: {
+        A: {
+          item: 'kubejs:universal_upgrade_cover'
+        },
+        B: {
+          item: 'kubejs:fbmodium_ingot'
+        },
+        C: {
+          item: 'kubejs:universal_upgrade_core'
+        }
+      },
+      result: {
+        item: 'kubejs:universal_upgrade'
+      }
+    })
+
+    
 
 })
