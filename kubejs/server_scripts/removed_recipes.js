@@ -11,6 +11,13 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'mekanism:module_base' })
     event.remove({ id: 'mekanismadditions:obsidian_tnt' })
     event.remove({ id: 'mekanism:induction/cell/basic' })
+    event.remove({ id: 'mekanism:upgrade/speed' })
+    event.remove({ id: 'mekanism:upgrade/energy' })
+    event.remove({ id: 'mekanism:upgrade/filter' })
+    event.remove({ id: 'mekanism:upgrade/muffling' })
+    event.remove({ id: 'mekanism:upgrade/gas' })
+    event.remove({ id: 'mekanism:upgrade/anchor' })
+    event.remove({ id: 'mekanism:upgrade/stone_generator' })
 
     // RF Tools
     
