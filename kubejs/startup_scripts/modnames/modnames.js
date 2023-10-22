@@ -32,5 +32,4 @@ Platform.mods.rftoolsutility.name = 'RF Tools'
 // Applied Energistics 2
 
 Platform.mods.ae2.name = 'AE2 - Applied Energistics 2'
-Platform.mods.ae2wtlib.name = 'AE2 - Applied Energistics 2'
 Platform.mods.appmek.name = 'AE2 - Applied Energistics 2'
