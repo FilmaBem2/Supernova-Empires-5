@@ -38,5 +38,7 @@ ServerEvents.recipes(event => {
     // Refined Storage
 
     event.remove({ id: 'refinedstorage:machine_casing'})
+    event.remove({ id: 'refinedstorage:silicon'})
+    
 
 })
