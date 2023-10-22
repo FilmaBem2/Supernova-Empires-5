@@ -35,4 +35,8 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: 'ae2:network/crafting/patterns_blank'})
 
+    // Refined Storage
+
+    event.remove({ id: 'refinedstorage:machine_casing'})
+
 })
