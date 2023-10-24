@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ae2:network/cells/item_storage_components_cell_1k_part'})
     event.remove({ id: 'ae2:network/cells/item_storage_components_cell_4k_part'})
     event.remove({ id: 'ae2:network/cells/item_storage_components_cell_16k_part'})
-    event.remove({ id: 'ae2:network/cells/item_storage_components_cell_64_part'})
+    event.remove({ id: 'ae2:network/cells/item_storage_components_cell_64k_part'})
     event.remove({ id: 'ae2:network/cells/item_storage_components_cell_256k_part'})
     event.remove({ id: 'ae2:network/cells/item_cell_housing'})
     event.remove({ id: 'ae2:network/cells/fluid_cell_housing'})
@@ -51,8 +51,23 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ae2:network/cells/fluid_storage_cell_4k'})
     event.remove({ id: 'ae2:network/cells/fluid_storage_cell_16k'})
     event.remove({ id: 'ae2:network/cells/fluid_storage_cell_64k'})
-    event.remove({ id: 'ae2:network/cells/fluid_storage_cell_265k'})
-    
+    event.remove({ id: 'ae2:network/cells/fluid_storage_cell_256k'})
+    event.remove({ id: 'ae2:network/cells/item_storage_cell_1k_storage'})
+    event.remove({ id: 'ae2:network/cells/item_storage_cell_4k_storage'})
+    event.remove({ id: 'ae2:network/cells/item_storage_cell_16k_storage'})
+    event.remove({ id: 'ae2:network/cells/item_storage_cell_64k_storage'})
+    event.remove({ id: 'ae2:network/cells/item_storage_cell_256k_storage'})
+    event.remove({ id: 'ae2:network/cells/fluid_storage_cell_1k_storage'})
+    event.remove({ id: 'ae2:network/cells/fluid_storage_cell_4k_storage'})
+    event.remove({ id: 'ae2:network/cells/fluid_storage_cell_16k_storage'})
+    event.remove({ id: 'ae2:network/cells/fluid_storage_cell_64k_storage'})
+    event.remove({ id: 'ae2:network/cells/fluid_storage_cell_256k_storage'})
+    event.remove({ id: 'appmek:chemical_storage_cell_1k'})
+    event.remove({ id: 'appmek:chemical_storage_cell_4k'})
+    event.remove({ id: 'appmek:chemical_storage_cell_16k'})
+    event.remove({ id: 'appmek:chemical_storage_cell_64k'})
+    event.remove({ id: 'appmek:chemical_storage_cell_256k'})
+
 
 
     // Refined Storage

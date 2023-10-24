@@ -262,6 +262,23 @@ ServerEvents.recipes(event => {
         }
     })
 
+    event.custom({
+        type: 'extendedcrafting:shapeless_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        ingredients: [
+            {
+                item: 'ae2:item_cell_housing'
+            },
+            {
+                item: 'ae2:cell_component_1k'
+            }
+        ],
+        result: {
+            item: 'ae2:item_storage_cell_1k'
+        }
+    })
+
     // 4k
 
     event.custom({
@@ -287,6 +304,23 @@ ServerEvents.recipes(event => {
                 tag: 'forge:ingots/iron'
             }
         },
+        result: {
+            item: 'ae2:item_storage_cell_4k'
+        }
+    })
+
+    event.custom({
+        type: 'extendedcrafting:shapeless_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        ingredients: [
+            {
+                item: 'ae2:item_cell_housing'
+            },
+            {
+                item: 'ae2:cell_component_4k'
+            }
+        ],
         result: {
             item: 'ae2:item_storage_cell_4k'
         }
@@ -322,6 +356,23 @@ ServerEvents.recipes(event => {
         }
     })
 
+    event.custom({
+        type: 'extendedcrafting:shapeless_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        ingredients: [
+            {
+                item: 'ae2:item_cell_housing'
+            },
+            {
+                item: 'ae2:cell_component_16k'
+            }
+        ],
+        result: {
+            item: 'ae2:item_storage_cell_16k'
+        }
+    })
+
     // 64k
 
     event.custom({
@@ -347,6 +398,23 @@ ServerEvents.recipes(event => {
                 tag: 'forge:ingots/iron'
             }
         },
+        result: {
+            item: 'ae2:item_storage_cell_64k'
+        }
+    })
+
+    event.custom({
+        type: 'extendedcrafting:shapeless_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        ingredients: [
+            {
+                item: 'ae2:item_cell_housing'
+            },
+            {
+                item: 'ae2:cell_component_64k'
+            }
+        ],
         result: {
             item: 'ae2:item_storage_cell_64k'
         }
@@ -382,6 +450,23 @@ ServerEvents.recipes(event => {
         }
     })
 
+    event.custom({
+        type: 'extendedcrafting:shapeless_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        ingredients: [
+            {
+                item: 'ae2:item_cell_housing'
+            },
+            {
+                item: 'ae2:cell_component_64k'
+            }
+        ],
+        result: {
+            item: 'ae2:item_storage_cell_64k'
+        }
+    })
+
     // Fluid Storage
 
     // 1k
@@ -409,6 +494,23 @@ ServerEvents.recipes(event => {
                 tag: 'forge:ingots/copper'
             }
         },
+        result: {
+            item: 'ae2:fluid_storage_cell_1k'
+        }
+    })
+
+    event.custom({
+        type: 'extendedcrafting:shapeless_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        ingredients: [
+            {
+                item: 'ae2:fluid_cell_housing'
+            },
+            {
+                item: 'ae2:cell_component_1k'
+            }
+        ],
         result: {
             item: 'ae2:fluid_storage_cell_1k'
         }
@@ -444,6 +546,23 @@ ServerEvents.recipes(event => {
         }
     })
 
+    event.custom({
+        type: 'extendedcrafting:shapeless_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        ingredients: [
+            {
+                item: 'ae2:fluid_cell_housing'
+            },
+            {
+                item: 'ae2:cell_component_4k'
+            }
+        ],
+        result: {
+            item: 'ae2:fluid_storage_cell_4k'
+        }
+    })
+
     // 16k
 
     event.custom({
@@ -469,6 +588,23 @@ ServerEvents.recipes(event => {
                 tag: 'forge:ingots/copper'
             }
         },
+        result: {
+            item: 'ae2:fluid_storage_cell_16k'
+        }
+    })
+
+    event.custom({
+        type: 'extendedcrafting:shapeless_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        ingredients: [
+            {
+                item: 'ae2:fluid_cell_housing'
+            },
+            {
+                item: 'ae2:cell_component_16k'
+            }
+        ],
         result: {
             item: 'ae2:fluid_storage_cell_16k'
         }
@@ -504,6 +640,23 @@ ServerEvents.recipes(event => {
         }
     })
 
+    event.custom({
+        type: 'extendedcrafting:shapeless_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        ingredients: [
+            {
+                item: 'ae2:fluid_cell_housing'
+            },
+            {
+                item: 'ae2:cell_component_64k'
+            }
+        ],
+        result: {
+            item: 'ae2:fluid_storage_cell_64k'
+        }
+    })
+
     // 265k
 
     event.custom({
@@ -529,6 +682,23 @@ ServerEvents.recipes(event => {
                 tag: 'forge:ingots/copper'
             }
         },
+        result: {
+            item: 'ae2:fluid_storage_cell_256k'
+        }
+    })
+
+    event.custom({
+        type: 'extendedcrafting:shapeless_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        ingredients: [
+            {
+                item: 'ae2:fluid_cell_housing'
+            },
+            {
+                item: 'ae2:cell_component_256k'
+            }
+        ],
         result: {
             item: 'ae2:fluid_storage_cell_256k'
         }
@@ -566,6 +736,23 @@ ServerEvents.recipes(event => {
         }
     })
 
+    event.custom({
+        type: 'extendedcrafting:shapeless_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        ingredients: [
+            {
+                item: 'appmek:chemical_cell_housing'
+            },
+            {
+                item: 'ae2:cell_component_1k'
+            }
+        ],
+        result: {
+            item: 'appmek:chemical_storage_cell_1k'
+        }
+    })
+
     // 4k
 
     event.custom({
@@ -591,6 +778,23 @@ ServerEvents.recipes(event => {
                 tag: 'forge:ingots/osmium'
             }
         },
+        result: {
+            item: 'appmek:chemical_storage_cell_4k'
+        }
+    })
+
+    event.custom({
+        type: 'extendedcrafting:shapeless_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        ingredients: [
+            {
+                item: 'appmek:chemical_cell_housing'
+            },
+            {
+                item: 'ae2:cell_component_4k'
+            }
+        ],
         result: {
             item: 'appmek:chemical_storage_cell_4k'
         }
@@ -626,6 +830,23 @@ ServerEvents.recipes(event => {
         }
     })
 
+    event.custom({
+        type: 'extendedcrafting:shapeless_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        ingredients: [
+            {
+                item: 'appmek:chemical_cell_housing'
+            },
+            {
+                item: 'ae2:cell_component_16k'
+            }
+        ],
+        result: {
+            item: 'appmek:chemical_storage_cell_16k'
+        }
+    })
+
     // 64k
 
     event.custom({
@@ -656,6 +877,23 @@ ServerEvents.recipes(event => {
         }
     })
 
+    event.custom({
+        type: 'extendedcrafting:shapeless_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        ingredients: [
+            {
+                item: 'appmek:chemical_cell_housing'
+            },
+            {
+                item: 'ae2:cell_component_64k'
+            }
+        ],
+        result: {
+            item: 'appmek:chemical_storage_cell_64k'
+        }
+    })
+
     // 265k
 
     event.custom({
@@ -681,6 +919,23 @@ ServerEvents.recipes(event => {
                 tag: 'forge:ingots/osmium'
             }
         },
+        result: {
+            item: 'appmek:chemical_storage_cell_256k'
+        }
+    })
+
+    event.custom({
+        type: 'extendedcrafting:shapeless_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        ingredients: [
+            {
+                item: 'appmek:chemical_cell_housing'
+            },
+            {
+                item: 'ae2:cell_component_256k'
+            }
+        ],
         result: {
             item: 'appmek:chemical_storage_cell_256k'
         }
