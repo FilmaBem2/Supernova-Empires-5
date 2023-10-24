@@ -95,6 +95,9 @@ ServerEvents.recipes(event => {
                 tag: 'forge:ingots/uranium'
             },
             {
+                item: 'refinedstorage:quartz_enriched_iron'
+            },
+            {
                 tag: 'forge:ingots/electrum'
             },
             {
