@@ -117,6 +117,9 @@
   "pipez": {
     "pipe": true
   },
+  "waystones": {
+    "waystone": true
+  },
   "camera": {
     "image_frame": true
   },
