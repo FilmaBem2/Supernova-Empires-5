@@ -34,6 +34,11 @@ ServerEvents.recipes(event => {
     // AE2
 
     event.remove({ id: 'ae2:network/crafting/patterns_blank'})
+    event.remove({ id: 'ae2:cell_component_1k'})
+    event.remove({ id: 'ae2:cell_component_4k'})
+    event.remove({ id: 'ae2:cell_component_16k'})
+    event.remove({ id: 'ae2:cell_component_64k'})
+    event.remove({ id: 'ae2:cell_component_256k'})
 
     // Refined Storage
 
