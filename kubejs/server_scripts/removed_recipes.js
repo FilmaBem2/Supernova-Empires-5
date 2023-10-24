@@ -42,6 +42,18 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ae2:network/cells/item_cell_housing'})
     event.remove({ id: 'ae2:network/cells/fluid_cell_housing'})
     event.remove({ id: 'appmek:chemical_cell_housing'})
+    event.remove({ id: 'ae2:network/cells/item_storage_cell_1k'})
+    event.remove({ id: 'ae2:network/cells/item_storage_cell_4k'})
+    event.remove({ id: 'ae2:network/cells/item_storage_cell_16k'})
+    event.remove({ id: 'ae2:network/cells/item_storage_cell_64k'})
+    event.remove({ id: 'ae2:network/cells/item_storage_cell_265k'})
+    event.remove({ id: 'ae2:network/cells/fluid_storage_cell_1k'})
+    event.remove({ id: 'ae2:network/cells/fluid_storage_cell_4k'})
+    event.remove({ id: 'ae2:network/cells/fluid_storage_cell_16k'})
+    event.remove({ id: 'ae2:network/cells/fluid_storage_cell_64k'})
+    event.remove({ id: 'ae2:network/cells/fluid_storage_cell_265k'})
+    
+
 
     // Refined Storage
 

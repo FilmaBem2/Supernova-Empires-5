@@ -232,9 +232,458 @@ ServerEvents.recipes(event => {
 
     // Item Storage
 
+    // 1k
+
+    event.custom({
+        type: 'extendedcrafting:shaped_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        pattern: [
+            'ABA',
+            'BCB',
+            'DDD'
+        ],
+        key: {
+            A: {
+                item: 'ae2:quartz_glass'
+            },
+            B: {
+                item: 'minecraft:redstone'
+            },
+            C: {
+                item: 'ae2:cell_componen_1k'
+            },
+            D: {
+                tag: 'forge:ingots/iron'
+            }
+        },
+        result: {
+            item: 'ae2:item_storage_cell_1k'
+        }
+    })
+
+    // 4k
+
+    event.custom({
+        type: 'extendedcrafting:shaped_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        pattern: [
+            'ABA',
+            'BCB',
+            'DDD'
+        ],
+        key: {
+            A: {
+                item: 'ae2:quartz_glass'
+            },
+            B: {
+                item: 'minecraft:redstone'
+            },
+            C: {
+                item: 'ae2:cell_componen_4k'
+            },
+            D: {
+                tag: 'forge:ingots/iron'
+            }
+        },
+        result: {
+            item: 'ae2:item_storage_cell_4k'
+        }
+    })
+
+    // 16k
+
+    event.custom({
+        type: 'extendedcrafting:shaped_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        pattern: [
+            'ABA',
+            'BCB',
+            'DDD'
+        ],
+        key: {
+            A: {
+                item: 'ae2:quartz_glass'
+            },
+            B: {
+                item: 'minecraft:redstone'
+            },
+            C: {
+                item: 'ae2:cell_componen_16k'
+            },
+            D: {
+                tag: 'forge:ingots/iron'
+            }
+        },
+        result: {
+            item: 'ae2:item_storage_cell_16k'
+        }
+    })
+
+    // 64k
+
+    event.custom({
+        type: 'extendedcrafting:shaped_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        pattern: [
+            'ABA',
+            'BCB',
+            'DDD'
+        ],
+        key: {
+            A: {
+                item: 'ae2:quartz_glass'
+            },
+            B: {
+                item: 'minecraft:redstone'
+            },
+            C: {
+                item: 'ae2:cell_componen_64k'
+            },
+            D: {
+                tag: 'forge:ingots/iron'
+            }
+        },
+        result: {
+            item: 'ae2:item_storage_cell_64k'
+        }
+    })
+
+    // 265k
+
+    event.custom({
+        type: 'extendedcrafting:shaped_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        pattern: [
+            'ABA',
+            'BCB',
+            'DDD'
+        ],
+        key: {
+            A: {
+                item: 'ae2:quartz_glass'
+            },
+            B: {
+                item: 'minecraft:redstone'
+            },
+            C: {
+                item: 'ae2:cell_componen_256k'
+            },
+            D: {
+                tag: 'forge:ingots/iron'
+            }
+        },
+        result: {
+            item: 'ae2:item_storage_cell_256k'
+        }
+    })
+
     // Fluid Storage
+
+    // 1k
+
+    event.custom({
+        type: 'extendedcrafting:shaped_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        pattern: [
+            'ABA',
+            'BCB',
+            'DDD'
+        ],
+        key: {
+            A: {
+                item: 'ae2:quartz_glass'
+            },
+            B: {
+                item: 'minecraft:redstone'
+            },
+            C: {
+                item: 'ae2:cell_componen_1k'
+            },
+            D: {
+                tag: 'forge:ingots/copper'
+            }
+        },
+        result: {
+            item: 'ae2:fluid_storage_cell_1k'
+        }
+    })
+
+    // 4k
+
+    event.custom({
+        type: 'extendedcrafting:shaped_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        pattern: [
+            'ABA',
+            'BCB',
+            'DDD'
+        ],
+        key: {
+            A: {
+                item: 'ae2:quartz_glass'
+            },
+            B: {
+                item: 'minecraft:redstone'
+            },
+            C: {
+                item: 'ae2:cell_componen_4k'
+            },
+            D: {
+                tag: 'forge:ingots/copper'
+            }
+        },
+        result: {
+            item: 'ae2:fluid_storage_cell_4k'
+        }
+    })
+
+    // 16k
+
+    event.custom({
+        type: 'extendedcrafting:shaped_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        pattern: [
+            'ABA',
+            'BCB',
+            'DDD'
+        ],
+        key: {
+            A: {
+                item: 'ae2:quartz_glass'
+            },
+            B: {
+                item: 'minecraft:redstone'
+            },
+            C: {
+                item: 'ae2:cell_componen_16k'
+            },
+            D: {
+                tag: 'forge:ingots/copper'
+            }
+        },
+        result: {
+            item: 'ae2:fluid_storage_cell_16k'
+        }
+    })
+
+    // 64k
+
+    event.custom({
+        type: 'extendedcrafting:shaped_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        pattern: [
+            'ABA',
+            'BCB',
+            'DDD'
+        ],
+        key: {
+            A: {
+                item: 'ae2:quartz_glass'
+            },
+            B: {
+                item: 'minecraft:redstone'
+            },
+            C: {
+                item: 'ae2:cell_componen_64k'
+            },
+            D: {
+                tag: 'forge:ingots/copper'
+            }
+        },
+        result: {
+            item: 'ae2:fluid_storage_cell_64k'
+        }
+    })
+
+    // 265k
+
+    event.custom({
+        type: 'extendedcrafting:shaped_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        pattern: [
+            'ABA',
+            'BCB',
+            'DDD'
+        ],
+        key: {
+            A: {
+                item: 'ae2:quartz_glass'
+            },
+            B: {
+                item: 'minecraft:redstone'
+            },
+            C: {
+                item: 'ae2:cell_componen_256k'
+            },
+            D: {
+                tag: 'forge:ingots/copper'
+            }
+        },
+        result: {
+            item: 'ae2:fluid_storage_cell_256k'
+        }
+    })
 
     // Chemical Storage
 
+    // 1k
+
+    event.custom({
+        type: 'extendedcrafting:shaped_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        pattern: [
+            'ABA',
+            'BCB',
+            'DDD'
+        ],
+        key: {
+            A: {
+                item: 'ae2:quartz_glass'
+            },
+            B: {
+                item: 'minecraft:redstone'
+            },
+            C: {
+                item: 'ae2:cell_componen_1k'
+            },
+            D: {
+                tag: 'forge:ingots/osmium'
+            }
+        },
+        result: {
+            item: 'appmek:chemical_storage_cell_1k'
+        }
+    })
+
+    // 4k
+
+    event.custom({
+        type: 'extendedcrafting:shaped_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        pattern: [
+            'ABA',
+            'BCB',
+            'DDD'
+        ],
+        key: {
+            A: {
+                item: 'ae2:quartz_glass'
+            },
+            B: {
+                item: 'minecraft:redstone'
+            },
+            C: {
+                item: 'ae2:cell_componen_4k'
+            },
+            D: {
+                tag: 'forge:ingots/osmium'
+            }
+        },
+        result: {
+            item: 'appmek:chemical_storage_cell_4k'
+        }
+    })
+
+    // 16k
+
+    event.custom({
+        type: 'extendedcrafting:shaped_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        pattern: [
+            'ABA',
+            'BCB',
+            'DDD'
+        ],
+        key: {
+            A: {
+                item: 'ae2:quartz_glass'
+            },
+            B: {
+                item: 'minecraft:redstone'
+            },
+            C: {
+                item: 'ae2:cell_componen_16k'
+            },
+            D: {
+                tag: 'forge:ingots/osmium'
+            }
+        },
+        result: {
+            item: 'appmek:chemical_storage_cell_16k'
+        }
+    })
+
+    // 64k
+
+    event.custom({
+        type: 'extendedcrafting:shaped_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        pattern: [
+            'ABA',
+            'BCB',
+            'DDD'
+        ],
+        key: {
+            A: {
+                item: 'ae2:quartz_glass'
+            },
+            B: {
+                item: 'minecraft:redstone'
+            },
+            C: {
+                item: 'ae2:cell_componen_64k'
+            },
+            D: {
+                tag: 'forge:ingots/osmium'
+            }
+        },
+        result: {
+            item: 'appmek:chemical_storage_cell_64k'
+        }
+    })
+
+    // 265k
+
+    event.custom({
+        type: 'extendedcrafting:shaped_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        pattern: [
+            'ABA',
+            'BCB',
+            'DDD'
+        ],
+        key: {
+            A: {
+                item: 'ae2:quartz_glass'
+            },
+            B: {
+                item: 'minecraft:redstone'
+            },
+            C: {
+                item: 'ae2:cell_componen_256k'
+            },
+            D: {
+                tag: 'forge:ingots/osmium'
+            }
+        },
+        result: {
+            item: 'appmek:chemical_storage_cell_256k'
+        }
+    })
 
 })
