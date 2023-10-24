@@ -251,7 +251,7 @@ ServerEvents.recipes(event => {
                 item: 'minecraft:redstone'
             },
             C: {
-                item: 'ae2:cell_componen_1k'
+                item: 'ae2:cell_component_1k'
             },
             D: {
                 tag: 'forge:ingots/iron'
@@ -298,7 +298,7 @@ ServerEvents.recipes(event => {
                 item: 'minecraft:redstone'
             },
             C: {
-                item: 'ae2:cell_componen_4k'
+                item: 'ae2:cell_component_4k'
             },
             D: {
                 tag: 'forge:ingots/iron'
@@ -345,7 +345,7 @@ ServerEvents.recipes(event => {
                 item: 'minecraft:redstone'
             },
             C: {
-                item: 'ae2:cell_componen_16k'
+                item: 'ae2:cell_component_16k'
             },
             D: {
                 tag: 'forge:ingots/iron'
@@ -392,7 +392,7 @@ ServerEvents.recipes(event => {
                 item: 'minecraft:redstone'
             },
             C: {
-                item: 'ae2:cell_componen_64k'
+                item: 'ae2:cell_component_64k'
             },
             D: {
                 tag: 'forge:ingots/iron'
@@ -420,7 +420,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    // 265k
+    // 256k
 
     event.custom({
         type: 'extendedcrafting:shaped_flux_crafter',
@@ -439,7 +439,7 @@ ServerEvents.recipes(event => {
                 item: 'minecraft:redstone'
             },
             C: {
-                item: 'ae2:cell_componen_256k'
+                item: 'ae2:cell_component_256k'
             },
             D: {
                 tag: 'forge:ingots/iron'
@@ -459,11 +459,11 @@ ServerEvents.recipes(event => {
                 item: 'ae2:item_cell_housing'
             },
             {
-                item: 'ae2:cell_component_64k'
+                item: 'ae2:cell_component_256k'
             }
         ],
         result: {
-            item: 'ae2:item_storage_cell_64k'
+            item: 'ae2:item_storage_cell_256k'
         }
     })
 
@@ -488,7 +488,7 @@ ServerEvents.recipes(event => {
                 item: 'minecraft:redstone'
             },
             C: {
-                item: 'ae2:cell_componen_1k'
+                item: 'ae2:cell_component_1k'
             },
             D: {
                 tag: 'forge:ingots/copper'
@@ -535,7 +535,7 @@ ServerEvents.recipes(event => {
                 item: 'minecraft:redstone'
             },
             C: {
-                item: 'ae2:cell_componen_4k'
+                item: 'ae2:cell_component_4k'
             },
             D: {
                 tag: 'forge:ingots/copper'
@@ -582,7 +582,7 @@ ServerEvents.recipes(event => {
                 item: 'minecraft:redstone'
             },
             C: {
-                item: 'ae2:cell_componen_16k'
+                item: 'ae2:cell_component_16k'
             },
             D: {
                 tag: 'forge:ingots/copper'
@@ -629,7 +629,7 @@ ServerEvents.recipes(event => {
                 item: 'minecraft:redstone'
             },
             C: {
-                item: 'ae2:cell_componen_64k'
+                item: 'ae2:cell_component_64k'
             },
             D: {
                 tag: 'forge:ingots/copper'
@@ -657,7 +657,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    // 265k
+    // 256k
 
     event.custom({
         type: 'extendedcrafting:shaped_flux_crafter',
@@ -676,7 +676,7 @@ ServerEvents.recipes(event => {
                 item: 'minecraft:redstone'
             },
             C: {
-                item: 'ae2:cell_componen_256k'
+                item: 'ae2:cell_component_256k'
             },
             D: {
                 tag: 'forge:ingots/copper'
@@ -725,7 +725,7 @@ ServerEvents.recipes(event => {
                 item: 'minecraft:redstone'
             },
             C: {
-                item: 'ae2:cell_componen_1k'
+                item: 'ae2:cell_component_1k'
             },
             D: {
                 tag: 'forge:ingots/osmium'
@@ -772,7 +772,7 @@ ServerEvents.recipes(event => {
                 item: 'minecraft:redstone'
             },
             C: {
-                item: 'ae2:cell_componen_4k'
+                item: 'ae2:cell_component_4k'
             },
             D: {
                 tag: 'forge:ingots/osmium'
@@ -819,7 +819,7 @@ ServerEvents.recipes(event => {
                 item: 'minecraft:redstone'
             },
             C: {
-                item: 'ae2:cell_componen_16k'
+                item: 'ae2:cell_component_16k'
             },
             D: {
                 tag: 'forge:ingots/osmium'
@@ -866,7 +866,7 @@ ServerEvents.recipes(event => {
                 item: 'minecraft:redstone'
             },
             C: {
-                item: 'ae2:cell_componen_64k'
+                item: 'ae2:cell_component_64k'
             },
             D: {
                 tag: 'forge:ingots/osmium'
@@ -894,7 +894,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    // 265k
+    // 256k
 
     event.custom({
         type: 'extendedcrafting:shaped_flux_crafter',
@@ -913,7 +913,7 @@ ServerEvents.recipes(event => {
                 item: 'minecraft:redstone'
             },
             C: {
-                item: 'ae2:cell_componen_256k'
+                item: 'ae2:cell_component_256k'
             },
             D: {
                 tag: 'forge:ingots/osmium'
