@@ -1,6 +1,83 @@
 
 ServerEvents.recipes(event => { 
 
+    // Housings
+
+    event.custom({
+        type: 'extendedcrafting:shaped_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        pattern: [
+            'ABA',
+            'B B',
+            'CCC'
+        ],
+        key: {
+            A: {
+                item: 'ae2:quartz_glass'
+            },
+            B: {
+                item: 'minecraft:redstone'
+            },
+            C: {
+                tag: 'forge:ingots/iron'
+            }
+        },
+        result: {
+            item: 'ae2:item_cell_housing'
+        }
+    })
+
+    event.custom({
+        type: 'extendedcrafting:shaped_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        pattern: [
+            'ABA',
+            'B B',
+            'CCC'
+        ],
+        key: {
+            A: {
+                item: 'ae2:quartz_glass'
+            },
+            B: {
+                item: 'minecraft:redstone'
+            },
+            C: {
+                tag: 'forge:ingots/copper'
+            }
+        },
+        result: {
+            item: 'ae2:fluid_cell_housing'
+        }
+    })
+
+    event.custom({
+        type: 'extendedcrafting:shaped_flux_crafter',
+        powerRequired: 100000,
+        powerRate: 400,
+        pattern: [
+            'ABA',
+            'B B',
+            'CCC'
+        ],
+        key: {
+            A: {
+                item: 'ae2:quartz_glass'
+            },
+            B: {
+                item: 'minecraft:redstone'
+            },
+            C: {
+                tag: 'forge:ingots/osmium'
+            }
+        },
+        result: {
+            item: 'appmek:chemical_cell_housing'
+        }
+    })
+
     // Storage Components
 
     // 1k
