@@ -298,7 +298,7 @@ ServerEvents.recipes(event => {
             }
         ],
         result: {
-            item: 'refinedstorage:1k_storage_part'
+            item: 'refinedstorage:1k_storage_disk'
         }
     })
 
@@ -345,7 +345,7 @@ ServerEvents.recipes(event => {
             }
         ],
         result: {
-            item: 'refinedstorage:4k_storage_part'
+            item: 'refinedstorage:4k_storage_disk'
         }
     })
 
@@ -392,7 +392,7 @@ ServerEvents.recipes(event => {
             }
         ],
         result: {
-            item: 'refinedstorage:16k_storage_part'
+            item: 'refinedstorage:16k_storage_disk'
         }
     })
 
@@ -439,7 +439,7 @@ ServerEvents.recipes(event => {
             }
         ],
         result: {
-            item: 'refinedstorage:64k_storage_part'
+            item: 'refinedstorage:64k_storage_disk'
         }
     })
 
@@ -488,7 +488,7 @@ ServerEvents.recipes(event => {
             }
         ],
         result: {
-            item: 'refinedstorage:64k_fluid_storage_part'
+            item: 'refinedstorage:64k_fluid_storage_disk'
         }
     })
 
@@ -535,7 +535,7 @@ ServerEvents.recipes(event => {
             }
         ],
         result: {
-            item: 'refinedstorage:256k_fluid_storage_part'
+            item: 'refinedstorage:256k_fluid_storage_disk'
         }
     })
 
@@ -582,7 +582,7 @@ ServerEvents.recipes(event => {
             }
         ],
         result: {
-            item: 'refinedstorage:1024k_fluid_storage_part'
+            item: 'refinedstorage:1024k_fluid_storage_disk'
         }
     })
 
@@ -629,7 +629,7 @@ ServerEvents.recipes(event => {
             }
         ],
         result: {
-            item: 'refinedstorage:4096k_fluid_storage_part'
+            item: 'refinedstorage:4096k_fluid_storage_disk'
         }
     })
 
