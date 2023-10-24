@@ -39,6 +39,22 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: 'refinedstorage:machine_casing'})
     event.remove({ id: 'refinedstorage:silicon'})
+    event.remove({ id: 'refinedstorage:1k_storage_part'})
+    event.remove({ id: 'refinedstorage:4k_storage_part'})
+    event.remove({ id: 'refinedstorage:16k_storage_part'})
+    event.remove({ id: 'refinedstorage:64k_storage_part'})
+    event.remove({ id: 'refinedstorage:64k_fluid_storage_part'})
+    event.remove({ id: 'refinedstorage:256k_fluid_storage_part'})
+    event.remove({ id: 'refinedstorage:1024k_fluid_storage_part'})
+    event.remove({ id: 'refinedstorage:4096k_fluid_storage_part'})
+    event.remove({ id: 'refinedstorage:1k_storage_disk'})
+    event.remove({ id: 'refinedstorage:4k_storage_disk'})
+    event.remove({ id: 'refinedstorage:16k_storage_disk'})
+    event.remove({ id: 'refinedstorage:64k_storage_disk'})
+    event.remove({ id: 'refinedstorage:64k_fluid_storage_disk'})
+    event.remove({ id: 'refinedstorage:256k_fluid_storage_disk'})
+    event.remove({ id: 'refinedstorage:1024k_fluid_storage_disk'})
+    event.remove({ id: 'refinedstorage:4096k_fluid_storage_disk'})
     
 
 })
