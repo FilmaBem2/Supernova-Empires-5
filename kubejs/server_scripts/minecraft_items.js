@@ -62,4 +62,92 @@ ServerEvents.recipes(event => {
       ]
   )
 
+  // Totem of Undying
+
+  event.custom({
+    type: 'extendedcrafting:combination',
+    powerCost: 100000,
+    input: {
+      item: 'extendedcrafting:flux_star'
+    },
+    ingredients: [
+      {
+        item: 'minecraft:emerald'
+      },
+      {
+        item: 'minecraft:emerald'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      },
+      {
+        item: 'minecraft:gold_block'
+      }
+    ],
+    result: {
+      item: 'minecraft:totem_of_undying'
+    }
+
+  })
+
 })
