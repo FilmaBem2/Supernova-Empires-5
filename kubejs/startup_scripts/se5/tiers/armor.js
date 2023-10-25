@@ -4,7 +4,7 @@ ItemEvents.armorTierRegistry (event => {
     event.add('fbmodium', tier => {
 
       tier.durabilityMultiplier = 50
-      tier.slotProtections = [2, 5, 6, 2] 
+      tier.slotProtections = [52, 55, 56, 52] 
       tier.enchantmentValue = 15
       tier.equipSound = 'minecraft:item.armor.equip_iron'
       tier.repairIngredient = '#forge:ingots/fbmodium'
@@ -15,7 +15,7 @@ ItemEvents.armorTierRegistry (event => {
     event.add('nether_infused_fbmodium', tier => {
 
         tier.durabilityMultiplier = 100
-        tier.slotProtections = [2, 5, 6, 2] 
+        tier.slotProtections = [102, 105, 106, 102] 
         tier.enchantmentValue = 15
         tier.equipSound = 'minecraft:item.armor.equip_iron'
         tier.repairIngredient = '#forge:ingots/nether_infused_fbmodium'
@@ -26,7 +26,7 @@ ItemEvents.armorTierRegistry (event => {
     event.add('end_infused_fbmodium', tier => {
 
         tier.durabilityMultiplier = 400
-        tier.slotProtections = [2, 5, 6, 2] 
+        tier.slotProtections = [402, 405, 406, 402] 
         tier.enchantmentValue = 15
         tier.equipSound = 'minecraft:item.armor.equip_iron'
         tier.repairIngredient = '#forge:ingots/end_infused_fbmodium'
@@ -37,7 +37,7 @@ ItemEvents.armorTierRegistry (event => {
     event.add('ultimate_infused_fbmodium', tier => {
 
         tier.durabilityMultiplier = 4000
-        tier.slotProtections = [2, 5, 6, 2] 
+        tier.slotProtections = [4002, 4005, 4006, 4002] 
         tier.enchantmentValue = 15
         tier.equipSound = 'minecraft:item.armor.equip_iron'
         tier.repairIngredient = '#forge:ingots/ultimate_infused_fbmodium'
