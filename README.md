@@ -2,7 +2,7 @@
 
 Supernova Empires 3 is the sequel for Supernova Empires 2 with some improvements
 
-## Sumary
+## Summary
 
 Explore the world alone or with friends, organize you items, produce energy for your machines, cast spells on your enemy, become a vampire, do whatever you like.
 
