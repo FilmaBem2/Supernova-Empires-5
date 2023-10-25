@@ -138,6 +138,79 @@ ServerEvents.recipes(event => {
       }
     })
 
+    // Ore conversions
 
+    event.shapeless(
+      Item.of('kubejs:fbmodium_ingot', 9),
+      [ 
+        'kubejs:fbmodium_block'
+      ]
+    )
+
+    event.shapeless(
+      Item.of('kubejs:fbmodium_block'),
+      [ 
+        '9x kubejs:fbmodium_ingot'
+      ]
+    )
+
+    event.shapeless(
+      Item.of('kubejs:nether_infused_fbmodium_ingot', 9),
+      [ 
+        'kubejs:nether_infused_fbmodium_block'
+      ]
+    )
+
+    event.shapeless(
+      Item.of('kubejs:nether_infused_fbmodium_block'),
+      [ 
+        '9x kubejs:nether_infused_fbmodium_ingot'
+      ]
+    )
+
+    event.shapeless(
+      Item.of('kubejs:end_infused_fbmodium_ingot', 9),
+      [ 
+        'kubejs:end_infused_fbmodium_block'
+      ]
+    )
+
+    event.shapeless(
+      Item.of('kubejs:end_infused_fbmodium_block'),
+      [ 
+        '9x kubejs:end_infused_fbmodium_ingot'
+      ]
+    )
+
+    event.shapeless(
+      Item.of('kubejs:ultimate_infused_fbmodium_ingot', 9),
+      [ 
+        'kubejs:ultimate_infused_fbmodium_block'
+      ]
+    )
+
+    event.shapeless(
+      Item.of('kubejs:ultimate_infused_fbmodium_block'),
+      [ 
+        '9x kubejs:ultimate_infused_fbmodium_ingot'
+      ]
+    )
+
+    event.smelting('kubejs:fbmodium_ingot', 'kubejs:fbmodium_ore')
+    event.blasting('kubejs:fbmodium_ingot', 'kubejs:fbmodium_ore')
+    event.smelting('kubejs:fbmodium_ingot', 'kubejs:deepslate_fbmodium_ore')
+    event.blasting('kubejs:fbmodium_ingot', 'kubejs:deepslate_fbmodium_ore')
+    event.smelting('kubejs:nether_infused_fbmodium_ingot', 'kubejs:nether_infused_fbmodium_ore')
+    event.blasting('kubejs:nether_infused_fbmodium_ingot', 'kubejs:nether_infused_fbmodium_ore')
+    event.smelting('kubejs:nether_infused_fbmodium_ingot', 'kubejs:deepslate_nether_infused_fbmodium_ore')
+    event.blasting('kubejs:nether_infused_fbmodium_ingot', 'kubejs:deepslate_nether_infused_fbmodium_ore')
+    event.smelting('kubejs:end_infused_fbmodium_ingot', 'kubejs:end_infused_fbmodium_ore')
+    event.blasting('kubejs:end_infused_fbmodium_ingot', 'kubejs:end_infused_fbmodium_ore')
+    event.smelting('kubejs:end_infused_fbmodium_ingot', 'kubejs:deepslate_end_infused_fbmodium_ore')
+    event.blasting('kubejs:end_infused_fbmodium_ingot', 'kubejs:deepslate_end_infused_fbmodium_ore')
+    event.smelting('kubejs:ultimate_infused_fbmodium_ingot', 'kubejs:ultimate_infused_fbmodium_ore')
+    event.blasting('kubejs:ultimate_infused_fbmodium_ingot', 'kubejs:ultimate_infused_fbmodium_ore')
+    event.smelting('kubejs:ultimate_infused_fbmodium_ingot', 'kubejs:deepslate_ultimate_infused_fbmodium_ore')
+    event.blasting('kubejs:ultimate_infused_fbmodium_ingot', 'kubejs:deepslate_ultimate_infused_fbmodium_ore')
 
 })
