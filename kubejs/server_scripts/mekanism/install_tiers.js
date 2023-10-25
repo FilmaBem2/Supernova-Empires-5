@@ -1,6 +1,36 @@
 
 ServerEvents.recipes(event => { 
     
+    let tiers = (output, alloy, circuit, ore) =>{
+        event.custom({
+            type: 'extendedcrafting:shaped_flux_crafter',
+            powerRequired: 100000,
+            powerRate: 400,
+            pattern: [
+                'ABA',
+                'CDC',
+                'ABA'
+            ],
+            key: {
+                A: {
+                    tag: alloy
+                },
+                B: {
+                    tag: circuit
+                },
+                C: {
+                    tag: ore
+                },
+                D: {
+                    tag: 'minecraft:planks'
+                }
+            },
+            result: {
+                item: output
+            }
+        })
+    }
+
     // Basic Tier
 
     event.custom({
@@ -32,97 +62,9 @@ ServerEvents.recipes(event => {
         }
     })
 
-    // Advanced Tier
-
-    event.custom({
-
-        type: 'extendedcrafting:shaped_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        pattern: [
-            'ABA',
-            'CDC',
-            'ABA'
-        ],
-        key: {
-            A: {
-                tag: 'forge:alloys/advanced'
-            },
-            B: {
-                tag: 'forge:circuits/advanced'
-            },
-            C: {
-                tag: 'forge:ingots/osmium'
-            },
-            D: {
-                tag: 'minecraft:planks'
-            }
-        },
-        result: {
-            item: 'mekanism:advanced_tier_installer'
-        }
-    })
-
-    // Elite Tier
-
-    event.custom({
-
-        type: 'extendedcrafting:shaped_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        pattern: [
-            'ABA',
-            'CDC',
-            'ABA'
-        ],
-        key: {
-            A: {
-                tag: 'forge:alloys/elite'
-            },
-            B: {
-                tag: 'forge:circuits/elite'
-            },
-            C: {
-                tag: 'forge:ingots/gold'
-            },
-            D: {
-                tag: 'minecraft:planks'
-            }
-        },
-        result: {
-            item: 'mekanism:elite_tier_installer'
-        }
-    })
-
-    // Ultimate
-
-    event.custom({
-
-        type: 'extendedcrafting:shaped_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        pattern: [
-            'ABA',
-            'CDC',
-            'ABA'
-        ],
-        key: {
-            A: {
-                tag: 'forge:alloys/ultimate'
-            },
-            B: {
-                tag: 'forge:circuits/ultimate'
-            },
-            C: {
-                tag: 'forge:gems/diamond'
-            },
-            D: {
-                tag: 'minecraft:planks'
-            }
-        },
-        result: {
-            item: 'mekanism:ultimate_tier_installer'
-        }
-    })
+    tiers('mekanism:advanced_tier_installer', 'forge:alloys/advanced', 'forge:circuits/advanced', 'forge:ingots/osmium')
+    tiers('mekanism:elite_tier_installer', 'forge:alloys/elite', 'forge:circuits/elite', 'forge:ingots/gold')
+    tiers('mekanism:ultimate_tier_installer', 'forge:alloys/ultimate', 'forge:circuits/ultimate', 'forge:gems/diamond')
+    
 })
 

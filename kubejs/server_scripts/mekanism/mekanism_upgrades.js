@@ -1,171 +1,41 @@
 
 ServerEvents.recipes(event => { 
+
+    let mekanism_upgrades = (output, dust, sides) => {
+        event.custom({
+            type: 'extendedcrafting:shaped_flux_crafter',
+            powerRequired: 100000,
+            powerRate: 400,
+            pattern: [
+                ' A ',
+                'BCB',
+                ' A '
+            ],
+            key: {
+                A: {
+                    tag: 'forge:glass'
+                },
+                B: {
+                    tag: sides
+                },
+                C: {
+                    tag: dust
+                }
+            },
+            result: {
+                item: output
+            }
+        })
+    }
     
-    // Speed upgrade
+    // Most of mekanism upgrades
 
-    event.custom({
-        type: 'extendedcrafting:shaped_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        pattern: [
-            ' A ',
-            'BCB',
-            ' A '
-        ],
-        key: {
-            A: {
-                tag: 'forge:glass'
-            },
-            B: {
-                tag: 'forge:alloys/advanced'
-            },
-            C: {
-                tag: 'forge:dusts/osmium'
-            }
-        },
-        result: {
-            item: 'mekanism:upgrade_speed'
-        }
-    })
-
-
-    // Energy upgrade
-
-    event.custom({
-        type: 'extendedcrafting:shaped_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        pattern: [
-            ' A ',
-            'BCB',
-            ' A '
-        ],
-        key: {
-            A: {
-                tag: 'forge:glass'
-            },
-            B: {
-                tag: 'forge:alloys/advanced'
-            },
-            C: {
-                tag: 'forge:dusts/gold'
-            }
-        },
-        result: {
-            item: 'mekanism:upgrade_energy'
-        }
-    })
-
-
-    // Filter upgrade
-
-    event.custom({
-        type: 'extendedcrafting:shaped_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        pattern: [
-            ' A ',
-            'BCB',
-            ' A '
-        ],
-        key: {
-            A: {
-                tag: 'forge:glass'
-            },
-            B: {
-                tag: 'forge:alloys/advanced'
-            },
-            C: {
-                tag: 'forge:dusts/tin'
-            }
-        },
-        result: {
-            item: 'mekanism:upgrade_filter'
-        }
-    })
-
-
-    // Muffling upgrade
-
-    event.custom({
-        type: 'extendedcrafting:shaped_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        pattern: [
-            ' A ',
-            'BCB',
-            ' A '
-        ],
-        key: {
-            A: {
-                tag: 'forge:glass'
-            },
-            B: {
-                tag: 'forge:alloys/advanced'
-            },
-            C: {
-                tag: 'forge:dusts/steel'
-            }
-        },
-        result: {
-            item: 'mekanism:upgrade_muffling'
-        }
-    })
-
-
-    // Gas upgrade
-
-    event.custom({
-        type: 'extendedcrafting:shaped_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        pattern: [
-            ' A ',
-            'BCB',
-            ' A '
-        ],
-        key: {
-            A: {
-                tag: 'forge:glass'
-            },
-            B: {
-                tag: 'forge:alloys/advanced'
-            },
-            C: {
-                tag: 'forge:dusts/iron'
-            }
-        },
-        result: {
-            item: 'mekanism:upgrade_gas'
-        }
-    })
-
-    // Anchor upgrade
-
-    event.custom({
-        type: 'extendedcrafting:shaped_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        pattern: [
-            ' A ',
-            'BCB',
-            ' A '
-        ],
-        key: {
-            A: {
-                tag: 'forge:glass'
-            },
-            B: {
-                tag: 'forge:alloys/advanced'
-            },
-            C: {
-                tag: 'forge:dusts/diamond'
-            }
-        },
-        result: {
-            item: 'mekanism:upgrade_anchor'
-        }
-    })
+    mekanism_upgrades('mekanism:upgrade_speed', 'forge:dusts/osmium', 'forge:alloys/advanced')
+    mekanism_upgrades('mekanism:upgrade_energy', 'forge:dusts/gold', 'forge:alloys/advanced')
+    mekanism_upgrades('mekanism:upgrade_filter', 'forge:dusts/tin', 'forge:alloys/advanced')
+    mekanism_upgrades('mekanism:upgrade_muffling', 'forge:dusts/steel', 'forge:alloys/advanced')
+    mekanism_upgrades('mekanism:upgrade_gas', 'forge:dusts/iron', 'forge:alloys/advanced')
+    mekanism_upgrades('mekanism:upgrade_anchor', 'forge:dusts/diamond', 'forge:alloys/advanced')
 
     // Stone Generator upgrade
 

@@ -1,52 +1,30 @@
 
 ServerEvents.recipes(event => { 
     
+    let ts_style = (output, input1, input2, input3) => {
+      event.shaped(
+        Item.of(output),
+        [
+          'ABA',
+          'BCB',
+          'ABA'
+        ],
+        {
+          A: input1,
+          B: input2,
+          C: input3
+        }
+      )
+    }
     // Transmutation Stone
 
-    event.shaped(
-        Item.of('kubejs:transmutation_stone'),
-        [ 
-          'ABA', 
-          'BCB',
-          'ABA'  
-        ],
-        {
-          A: 'minecraft:glowstone_dust', 
-          B: 'minecraft:redstone',
-          C: 'minecraft:diamond'
-        }
-    ),
-
-    event.shaped(
-        Item.of('kubejs:transmutation_stone'),
-        [ 
-          'ABA', 
-          'BCB',
-          'ABA'  
-        ],
-        {
-          A: 'minecraft:redstone', 
-          B: 'minecraft:glowstone_dust',
-          C: 'minecraft:diamond'
-        }
-    ),
+    ts_style('kubejs:transmutation_stone', 'minecraft:glowstone_dust', 'minecraft:redstone', 'minecraft:diamond')
+    ts_style('kubejs:transmutation_stone', 'minecraft:redstone', 'minecraft:glowstone_dust', 'minecraft:diamond')
 
     // Machine Casing
 
-    event.shaped(
-        Item.of('kubejs:machine_casing'),
-        [ 
-          'ABA', 
-          'BCB',
-          'ABA'  
-        ],
-        {
-          A: '#forge:ingots/steel', 
-          B: '#forge:ingots/osmium',
-          C: '#forge:ingots/iron'
-        }
-    )
-
+    ts_style('kubejs:machine_casing', '#forge:ingots/steel', '#forge:ingots/osmium', '#forge:ingots/iron')
+    
     // Universal Upgrade Cover
 
     event.custom({
