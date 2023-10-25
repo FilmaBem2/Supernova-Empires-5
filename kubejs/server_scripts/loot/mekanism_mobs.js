@@ -16,6 +16,5 @@ LootJS.modifiers((event) => {
     // Enderman / 1$
 
     event.addEntityLootModifier("mekanismadditions:baby_enderman").randomChance(0.3).addLoot("kubejs:one_dollar");
-
-    
+ 
 });
