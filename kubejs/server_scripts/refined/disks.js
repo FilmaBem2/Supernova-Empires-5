@@ -1,6 +1,24 @@
 
 ServerEvents.recipes(event => { 
     
+    let disk_from_housing = (output, housing, part) => {
+        event.custom({
+            type: 'extendedcrafting:shapeless_flux_crafter',
+            powerRequired: 100000,
+            powerRate: 400,
+            ingredients: [
+                {
+                    item: housing
+                },
+                {
+                    item: part
+                }
+            ],
+            result: {
+                item: output
+            }
+        })
+    }
     // --- Disk Parts ---
 
     // -- Storage --
@@ -285,22 +303,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'refinedstorage:storage_housing'
-            },
-            {
-                item: 'refinedstorage:1k_storage_part'
-            }
-        ],
-        result: {
-            item: 'refinedstorage:1k_storage_disk'
-        }
-    })
+    disk_from_housing('refinedstorage:1k_storage_disk', 'refinedstorage:storage_housing', 'refinedstorage:1k_storage_part')
 
     // 4k
 
@@ -332,22 +335,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'refinedstorage:storage_housing'
-            },
-            {
-                item: 'refinedstorage:4k_storage_part'
-            }
-        ],
-        result: {
-            item: 'refinedstorage:4k_storage_disk'
-        }
-    })
+    disk_from_housing('refinedstorage:4k_storage_disk', 'refinedstorage:storage_housing', 'refinedstorage:4k_storage_part')
 
     // 16k
 
@@ -379,22 +367,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'refinedstorage:storage_housing'
-            },
-            {
-                item: 'refinedstorage:16k_storage_part'
-            }
-        ],
-        result: {
-            item: 'refinedstorage:16k_storage_disk'
-        }
-    })
+    disk_from_housing('refinedstorage:16k_storage_disk', 'refinedstorage:storage_housing', 'refinedstorage:16k_storage_part')
 
     // 64k
 
@@ -426,22 +399,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'refinedstorage:storage_housing'
-            },
-            {
-                item: 'refinedstorage:64k_storage_part'
-            }
-        ],
-        result: {
-            item: 'refinedstorage:64k_storage_disk'
-        }
-    })
+    disk_from_housing('refinedstorage:64k_storage_disk', 'refinedstorage:storage_housing', 'refinedstorage:64k_storage_part')
 
     // -- Fluid --
 
@@ -475,22 +433,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'refinedstorage:storage_housing'
-            },
-            {
-                item: 'refinedstorage:64k_fluid_storage_part'
-            }
-        ],
-        result: {
-            item: 'refinedstorage:64k_fluid_storage_disk'
-        }
-    })
+    disk_from_housing('refinedstorage:64k_storage_disk', 'refinedstorage:storage_housing', 'refinedstorage:64k_storage_part')
 
     // 256k
 
@@ -522,22 +465,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'refinedstorage:storage_housing'
-            },
-            {
-                item: 'refinedstorage:256k_fluid_storage_part'
-            }
-        ],
-        result: {
-            item: 'refinedstorage:256k_fluid_storage_disk'
-        }
-    })
+    disk_from_housing('refinedstorage:256k_fluid_storage_disk', 'refinedstorage:storage_housing', 'refinedstorage:256k_fluid_storage_part')
 
     // 1024k
 
@@ -569,22 +497,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'refinedstorage:storage_housing'
-            },
-            {
-                item: 'refinedstorage:1024k_fluid_storage_part'
-            }
-        ],
-        result: {
-            item: 'refinedstorage:1024k_fluid_storage_disk'
-        }
-    })
+    disk_from_housing('refinedstorage:1024k_fluid_storage_disk', 'refinedstorage:storage_housing', 'refinedstorage:1024k_fluid_storage_part')
 
     // 4096k
 
@@ -616,21 +529,6 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'refinedstorage:storage_housing'
-            },
-            {
-                item: 'refinedstorage:4096k_fluid_storage_part'
-            }
-        ],
-        result: {
-            item: 'refinedstorage:4096k_fluid_storage_disk'
-        }
-    })
+    disk_from_housing('refinedstorage:4096k_fluid_storage_disk', 'refinedstorage:storage_housing', 'refinedstorage:4096k_fluid_storage_part')
 
 })
