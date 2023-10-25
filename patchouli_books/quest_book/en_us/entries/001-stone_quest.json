@@ -1,0 +1,19 @@
+{
+    "name": "Upgrade your Gear",
+    "icon": "minecraft:oak_log",
+    "category": "patchouli:000-starting",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Upgrade your gear",
+            "text": "Get a stone pickaxe."
+        },
+        {
+            "type": "patchouli:quest",
+            "title": "Upgrade your gear",
+            "text": "Get a stone pickaxe",
+            "trigger": "se5:se5/stone_pickaxe"
+        }
+
+    ]
+}

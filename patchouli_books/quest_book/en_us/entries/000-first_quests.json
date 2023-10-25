@@ -1,0 +1,19 @@
+{
+    "name": "Your first quest",
+    "icon": "minecraft:oak_log",
+    "category": "patchouli:000-starting",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Introduction",
+            "text": "This is where you will check your quests... We think that's it... there is no more to talk about quests. "
+        },
+        {
+            "type": "patchouli:quest",
+            "title": "Getting Wood",
+            "text": "Get some wood logs",
+            "trigger": "se5:se5/root"
+        }
+
+    ]
+}
