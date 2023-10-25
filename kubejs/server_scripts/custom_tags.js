@@ -14,6 +14,8 @@ ServerEvents.tags('item', event => {
     event.add('forge:ingots/nether_fbmodium', 'kubejs:nether_infused_fbmodium_ingot')
     event.add('forge:ingots/end_fbmodium', 'kubejs:end_infused_fbmodium_ingot')
     event.add('forge:ingots/ultimate_fbmodium', 'kubejs:ultimate_infused_fbmodium_ingot')
-    
+    event.add('forge:ingots/nether_infused_fbmodium', 'kubejs:nether_infused_fbmodium_ingot')
+    event.add('forge:ingots/end_infused_fbmodium', 'kubejs:end_infused_fbmodium_ingot')
+    event.add('forge:ingots/ultimate_infused_fbmodium', 'kubejs:ultimate_infused_fbmodium_ingot')
 
   })
