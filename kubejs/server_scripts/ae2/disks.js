@@ -1,82 +1,57 @@
 
 ServerEvents.recipes(event => { 
 
+    let disk_from_housing = (output, housing, part) => {
+        event.custom({
+            type: 'extendedcrafting:shapeless_flux_crafter',
+            powerRequired: 100000,
+            powerRate: 400,
+            ingredients: [
+                {
+                    item: housing
+                },
+                {
+                    item: part
+                }
+            ],
+            result: {
+                item: output
+            }
+        })
+    }
+
+    let housing_recipe = (output, input) => {
+        event.custom({
+            type: 'extendedcrafting:shaped_flux_crafter',
+            powerRequired: 100000,
+            powerRate: 400,
+            pattern: [
+                'ABA',
+                'B B',
+                'CCC'
+            ],
+            key: {
+                A: {
+                    item: 'ae2:quartz_glass'
+                },
+                B: {
+                    item: 'minecraft:redstone'
+                },
+                C: {
+                    tag: input
+                },
+            },
+            result: {
+                item: output
+            }
+        })
+    }
+
     // Housings
 
-    event.custom({
-        type: 'extendedcrafting:shaped_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        pattern: [
-            'ABA',
-            'B B',
-            'CCC'
-        ],
-        key: {
-            A: {
-                item: 'ae2:quartz_glass'
-            },
-            B: {
-                item: 'minecraft:redstone'
-            },
-            C: {
-                tag: 'forge:ingots/iron'
-            }
-        },
-        result: {
-            item: 'ae2:item_cell_housing'
-        }
-    })
-
-    event.custom({
-        type: 'extendedcrafting:shaped_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        pattern: [
-            'ABA',
-            'B B',
-            'CCC'
-        ],
-        key: {
-            A: {
-                item: 'ae2:quartz_glass'
-            },
-            B: {
-                item: 'minecraft:redstone'
-            },
-            C: {
-                tag: 'forge:ingots/copper'
-            }
-        },
-        result: {
-            item: 'ae2:fluid_cell_housing'
-        }
-    })
-
-    event.custom({
-        type: 'extendedcrafting:shaped_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        pattern: [
-            'ABA',
-            'B B',
-            'CCC'
-        ],
-        key: {
-            A: {
-                item: 'ae2:quartz_glass'
-            },
-            B: {
-                item: 'minecraft:redstone'
-            },
-            C: {
-                tag: 'forge:ingots/osmium'
-            }
-        },
-        result: {
-            item: 'appmek:chemical_cell_housing'
-        }
-    })
+    housing_recipe('ae2:item_cell_housing', 'forge:ingots/iron')
+    housing_recipe('ae2:fluid_cell_housing', 'forge:ingots/copper')
+    housing_recipe('appmek:chemical_cell_housing', 'forge:ingots/osmium')
 
     // Storage Components
 
@@ -262,22 +237,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'ae2:item_cell_housing'
-            },
-            {
-                item: 'ae2:cell_component_1k'
-            }
-        ],
-        result: {
-            item: 'ae2:item_storage_cell_1k'
-        }
-    })
+    disk_from_housing('ae2:item_storage_cell_1k', 'ae2:item_cell_housing', 'ae2:cell_component_1k')
 
     // 4k
 
@@ -309,22 +269,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'ae2:item_cell_housing'
-            },
-            {
-                item: 'ae2:cell_component_4k'
-            }
-        ],
-        result: {
-            item: 'ae2:item_storage_cell_4k'
-        }
-    })
+    disk_from_housing('ae2:item_storage_cell_4k', 'ae2:item_cell_housing', 'ae2:cell_component_4k')
 
     // 16k
 
@@ -356,22 +301,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'ae2:item_cell_housing'
-            },
-            {
-                item: 'ae2:cell_component_16k'
-            }
-        ],
-        result: {
-            item: 'ae2:item_storage_cell_16k'
-        }
-    })
+    disk_from_housing('ae2:item_storage_cell_16k', 'ae2:item_cell_housing', 'ae2:cell_component_16k')
 
     // 64k
 
@@ -403,22 +333,8 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'ae2:item_cell_housing'
-            },
-            {
-                item: 'ae2:cell_component_64k'
-            }
-        ],
-        result: {
-            item: 'ae2:item_storage_cell_64k'
-        }
-    })
+    disk_from_housing('ae2:item_storage_cell_64k', 'ae2:item_cell_housing', 'ae2:cell_component_64k')
+
 
     // 256k
 
@@ -450,22 +366,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'ae2:item_cell_housing'
-            },
-            {
-                item: 'ae2:cell_component_256k'
-            }
-        ],
-        result: {
-            item: 'ae2:item_storage_cell_256k'
-        }
-    })
+    disk_from_housing('ae2:item_storage_cell_256k', 'ae2:item_cell_housing', 'ae2:cell_component_256k')
 
     // Fluid Storage
 
@@ -499,22 +400,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'ae2:fluid_cell_housing'
-            },
-            {
-                item: 'ae2:cell_component_1k'
-            }
-        ],
-        result: {
-            item: 'ae2:fluid_storage_cell_1k'
-        }
-    })
+    disk_from_housing('ae2:fluid_storage_cell_1k', 'ae2:fluid_cell_housing', 'ae2:cell_component_1k')
 
     // 4k
 
@@ -546,22 +432,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'ae2:fluid_cell_housing'
-            },
-            {
-                item: 'ae2:cell_component_4k'
-            }
-        ],
-        result: {
-            item: 'ae2:fluid_storage_cell_4k'
-        }
-    })
+    disk_from_housing('ae2:fluid_storage_cell_4k', 'ae2:fluid_cell_housing', 'ae2:cell_component_4k')
 
     // 16k
 
@@ -593,22 +464,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'ae2:fluid_cell_housing'
-            },
-            {
-                item: 'ae2:cell_component_16k'
-            }
-        ],
-        result: {
-            item: 'ae2:fluid_storage_cell_16k'
-        }
-    })
+    disk_from_housing('ae2:fluid_storage_cell_16k', 'ae2:fluid_cell_housing', 'ae2:cell_component_16k')
 
     // 64k
 
@@ -640,22 +496,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'ae2:fluid_cell_housing'
-            },
-            {
-                item: 'ae2:cell_component_64k'
-            }
-        ],
-        result: {
-            item: 'ae2:fluid_storage_cell_64k'
-        }
-    })
+    disk_from_housing('ae2:fluid_storage_cell_64k', 'ae2:fluid_cell_housing', 'ae2:cell_component_64k')
 
     // 256k
 
@@ -687,22 +528,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'ae2:fluid_cell_housing'
-            },
-            {
-                item: 'ae2:cell_component_256k'
-            }
-        ],
-        result: {
-            item: 'ae2:fluid_storage_cell_256k'
-        }
-    })
+    disk_from_housing('ae2:fluid_storage_cell_256k', 'ae2:fluid_cell_housing', 'ae2:cell_component_256k')
 
     // Chemical Storage
 
@@ -736,22 +562,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'appmek:chemical_cell_housing'
-            },
-            {
-                item: 'ae2:cell_component_1k'
-            }
-        ],
-        result: {
-            item: 'appmek:chemical_storage_cell_1k'
-        }
-    })
+    disk_from_housing('appmek:chemical_storage_cell_1k', 'appmek:chemical_cell_housing', 'ae2:cell_component_1k')
 
     // 4k
 
@@ -783,22 +594,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'appmek:chemical_cell_housing'
-            },
-            {
-                item: 'ae2:cell_component_4k'
-            }
-        ],
-        result: {
-            item: 'appmek:chemical_storage_cell_4k'
-        }
-    })
+    disk_from_housing('appmek:chemical_storage_cell_4k', 'appmek:chemical_cell_housing', 'ae2:cell_component_4k')
 
     // 16k
 
@@ -830,22 +626,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'appmek:chemical_cell_housing'
-            },
-            {
-                item: 'ae2:cell_component_16k'
-            }
-        ],
-        result: {
-            item: 'appmek:chemical_storage_cell_16k'
-        }
-    })
+    disk_from_housing('appmek:chemical_storage_cell_16k', 'appmek:chemical_cell_housing', 'ae2:cell_component_16k')
 
     // 64k
 
@@ -877,22 +658,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'appmek:chemical_cell_housing'
-            },
-            {
-                item: 'ae2:cell_component_64k'
-            }
-        ],
-        result: {
-            item: 'appmek:chemical_storage_cell_64k'
-        }
-    })
+    disk_from_housing('appmek:chemical_storage_cell_64k', 'appmek:chemical_cell_housing', 'ae2:cell_component_64k')
 
     // 256k
 
@@ -924,21 +690,6 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.custom({
-        type: 'extendedcrafting:shapeless_flux_crafter',
-        powerRequired: 100000,
-        powerRate: 400,
-        ingredients: [
-            {
-                item: 'appmek:chemical_cell_housing'
-            },
-            {
-                item: 'ae2:cell_component_256k'
-            }
-        ],
-        result: {
-            item: 'appmek:chemical_storage_cell_256k'
-        }
-    })
+    disk_from_housing('appmek:chemical_storage_cell_256k', 'appmek:chemical_cell_housing', 'ae2:cell_component_256k')
 
 })
