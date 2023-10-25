@@ -31,19 +31,6 @@ ServerEvents.recipes(event => {
         }
     ),
 
-    event.shaped(
-        Item.of('ae2:orange_covered_dense_cable', 8), 
-        [ 
-        'AA', 
-        'AB'
-        ],
-        {
-        A: '#ae2:orange_covered_cable'
-        }
-    ),
-
-
-
     // Glass
 
     event.shaped(
@@ -87,17 +74,5 @@ ServerEvents.recipes(event => {
         A: '#ae2:smart_dense_cable', 
         B: '#forge:dyes/orange'
         }
-    ),
-
-    event.shaped(
-        Item.of('ae2:orange_smart_dense_cable', 8), 
-        [ 
-        'AA', 
-        'AB'
-        ],
-        {
-        A: '#ae2:orange_smart_cable'
-        }
     )
-
 })

@@ -31,19 +31,6 @@ ServerEvents.recipes(event => {
         }
     ),
 
-    event.shaped(
-        Item.of('ae2:light_gray_covered_dense_cable', 8), 
-        [ 
-        'AA', 
-        'AB'
-        ],
-        {
-        A: '#ae2:light_gray_covered_cable'
-        }
-    ),
-
-
-
     // Glass
 
     event.shaped(
@@ -86,17 +73,6 @@ ServerEvents.recipes(event => {
         {
         A: '#ae2:smart_dense_cable', 
         B: '#forge:dyes/light_gray'
-        }
-    ),
-
-    event.shaped(
-        Item.of('ae2:light_gray_smart_dense_cable', 8), 
-        [ 
-        'AA', 
-        'AB'
-        ],
-        {
-        A: '#ae2:light_gray_smart_cable'
         }
     )
 
