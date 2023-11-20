@@ -7,9 +7,9 @@ ServerEvents.recipes(event => {
         input: {
             tag: 'forge:gems/quartz'
         },
-        outputs: {
+        outputs: [{
             item: 'enderio:silicon'
-        }
+        }]
     })
 
 })
