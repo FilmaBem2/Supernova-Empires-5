@@ -6,6 +6,7 @@ journeymap/data
 journeymap/icon
 journeymap/journeymap.log
 journeymap/server
+journeymap/server/5.9
 local
 localconfigs
 logs
