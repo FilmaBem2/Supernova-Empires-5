@@ -64,5 +64,22 @@ ServerEvents.recipes(event => {
        
     };
 
+    // Create Alloys in EnderIO Alloy Smelter
+
     alloy2('create:brass_ingot', 'minecraft:copper_ingot', 'create:zinc_ingot')
+
+    // Extended Crafting Alloys in EnderIO Alloy Smelter
+
+    alloy2('extendedcrafting:redstone_ingot', 'minecraft:iron_ingot', 'minecraft:redstone')
+    alloy2('extendedcrafting:ender_ingot', 'minecraft:iron_ingot', 'minecraft:ender_pearl')
+    
+    // Mekanism Alloys
+
+    alloy2('mekanism:ingot_steel', 'minecraft:iron_ingot', 'minecraft:coal')
+    alloy2('mekanism:ingot_bronze', 'mekanism:ingot_tin', 'minecraft:copper_ingot')
+
+
+
+
+
 })

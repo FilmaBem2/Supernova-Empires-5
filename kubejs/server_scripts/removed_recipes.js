@@ -30,6 +30,8 @@ ServerEvents.recipes(event => {
     // Extended Crafting
 
     event.remove({ id: 'extendedcrafting:black_iron_ingot'})
+    event.remove({ id: 'extendedcrafting:redstone_ingot'})
+    event.remove({ id: 'extendedcrafting:ender_ingot'})
 
     // AE2
 
@@ -68,8 +70,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'appmek:chemical_storage_cell_64k'})
     event.remove({ id: 'appmek:chemical_storage_cell_256k'})
 
-
-
     // Refined Storage
 
     event.remove({ id: 'refinedstorage:machine_casing'})
@@ -90,6 +90,10 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'refinedstorage:256k_fluid_storage_disk'})
     event.remove({ id: 'refinedstorage:1024k_fluid_storage_disk'})
     event.remove({ id: 'refinedstorage:4096k_fluid_storage_disk'})
+
+    // Ad Astra
+
+    event.remove({ id: 'ad_astra:recipes/steel_ingot_from_basting_iron_ingot'})
     
 
 })
