@@ -1,5 +1,8 @@
 ServerEvents.recipes(event => { 
 
+    // This function checks if all 3 inputs have been passed and if they do make the recipe in that format, if only 2 inputs are passed it does the same but only for the 2 input ingredients
+    
+
     let alloy = (output, input1, input2, input3) => {
 
         if (input3 !== undefined) {
