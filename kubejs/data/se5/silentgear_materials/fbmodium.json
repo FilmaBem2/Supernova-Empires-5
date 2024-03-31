@@ -1,0 +1,55 @@
+{
+  "type": "silentgear:standard",
+  "simple": true,
+  "availability": {
+    "tier": 6,
+    "categories": [
+      "metal"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "kubejs:fbmodium_ingot"
+    }
+  },
+  "name": {
+    "text": "Fbmodium"
+  },
+  "stats": {
+    "main": {
+      "durability": 50000.0,
+      "armor_durability": 50000.0,
+      "enchantability": 50.0,
+      "rarity": 60.0,
+      "chargeability": 1.4,
+      "harvest_level": 6.0,
+      "harvest_speed": 5000.0,
+      "melee_damage": 5000.0,
+      "magic_damage": 50.0,
+      "attack_speed": 50.0,
+      "ranged_damage": 500.0,
+      "ranged_speed": 50,
+      "armor": 50000.0,
+      "armor_toughness": 50000.0,
+      "magic_armor": 50000.0
+    }
+  },
+  "model": {
+    "main/all": [
+      {
+        "texture": "fbmods5:fbmodium"
+      },
+      {
+        "texture": "fbmods5:_highlight"
+      }
+    ],
+    "main/fragment": [
+      {
+        "texture": "silentgear:metal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "type": "silentgear:enchantment_trait",
+    "max_level": 1,
+    "conditions": [
+      {
+        "type": "silentgear:gear_type",
+        "gear_type": "weapon"
+      }
+    ],
+    "name": {
+      "text": "Headoff"
+    },
+    "description": {
+      "text": "If you kill a mob you will have more chances to get his head."
+    },
+    "enchantments": {
+      "harvest_tool": [
+        {
+          "enchantment": "cyclic:beheading",
+          "level": [
+            50
+          ]
+        }
+      ]
+    }
+  }
