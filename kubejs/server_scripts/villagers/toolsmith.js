@@ -155,6 +155,20 @@ MoreJSEvents.villagerTrades((event) => {
     event.addTrade("toolsmith", 4, [TradeItem.of("kubejs:one_thousand_dollar", 3, 8)], "kubejs:ultimate_infused_fbmodium_shovel")
     event.addTrade("toolsmith", 4, [TradeItem.of("kubejs:one_thousand_dollar", 3, 8)], "kubejs:ultimate_infused_fbmodium_sword")
 
+    // Enchantments
+
+    event.addTrade("toolsmith", 5, [TradeItem.of("kubejs:five_dollar", 8, 12)], Item.of('minecraft:enchanted_book').enchant('minecraft:looting', 2))
+    event.addTrade("toolsmith", 5, [TradeItem.of("kubejs:five_dollar", 8, 12)], Item.of('minecraft:enchanted_book').enchant('minecraft:sweeping', 2))
+    event.addTrade("toolsmith", 5, [TradeItem.of("kubejs:five_dollar", 8, 15)], Item.of('minecraft:enchanted_book').enchant('minecraft:knockback', 2))
+    event.addTrade("toolsmith", 5, [TradeItem.of("kubejs:five_dollar", 8, 15)], Item.of('minecraft:enchanted_book').enchant('minecraft:fire_aspect', 2))
+    event.addTrade("toolsmith", 5, [TradeItem.of("kubejs:ten_dollar", 5, 12)], Item.of('minecraft:enchanted_book').enchant('minecraft:looting', 3))
+    event.addTrade("toolsmith", 5, [TradeItem.of("kubejs:ten_dollar", 5, 12)], Item.of('minecraft:enchanted_book').enchant('minecraft:sweeping', 3))
+    event.addTrade("toolsmith", 5, [TradeItem.of("kubejs:fifty_dollar", 5, 18)], Item.of('minecraft:enchanted_book').enchant('minecraft:sharpness', 5))
+    event.addTrade("toolsmith", 5, [TradeItem.of("kubejs:fifty_dollar", 5, 18)], Item.of('minecraft:enchanted_book').enchant('minecraft:smite', 5))
+    event.addTrade("toolsmith", 5, [TradeItem.of("kubejs:fifty_dollar", 5, 18)], Item.of('minecraft:enchanted_book').enchant('minecraft:bane_of_arthropods', 5))
+    event.addTrade("toolsmith", 5, [TradeItem.of("kubejs:fifty_dollar", 5, 18)], Item.of('minecraft:enchanted_book').enchant('ensorcellation:damage_illager', 5))
+    event.addTrade("toolsmith", 5, [TradeItem.of("kubejs:fifty_dollar", 5, 12)], Item.of('minecraft:enchanted_book').enchant('enderio:withering', 1))
+
     // Ultimate Catalyst
 
     event.addTrade("toolsmith", 5, [TradeItem.of("kubejs:ten_thousand_dollar", 60, 64), TradeItem.of("kubejs:ten_thousand_dollar", 60, 64)], "avaritia:infinity_catalyst")
