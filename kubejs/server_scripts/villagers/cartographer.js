@@ -16,7 +16,7 @@ MoreJSEvents.villagerTrades((event) => {
     event.addTrade("cartographer", 2, [TradeItem.of("kubejs:five_dollar", 1, 2)], 'minecraft:item_frame')
     event.addTrade("cartographer", 2, [TradeItem.of("kubejs:five_dollar", 1, 2)], 'minecraft:compass')
     event.addTrade("cartographer", 2, [TradeItem.of("kubejs:five_dollar", 1, 2)], 'minecraft:recovery_compass')
-    event.addTrade("clecartographerric", 2, [TradeItem.of("kubejs:five_dollar", 1, 2)], 'minecraft:clock')
+    event.addTrade("cartographer", 2, [TradeItem.of("kubejs:five_dollar", 1, 2)], 'minecraft:clock')
     event.addTrade("cartographer", 2, [TradeItem.of("kubejs:five_dollar", 1, 2)], 'additionaladditions:depth_meter')
     event.addTrade("cartographer", 2, [TradeItem.of("kubejs:five_dollar", 1, 2)], 'minecraft:spyglass')
 
