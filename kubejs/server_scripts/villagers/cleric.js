@@ -78,7 +78,6 @@ MoreJSEvents.villagerTrades((event) => {
     // Enchantment Trades
 
     event.addTrade("cleric", 5, [TradeItem.of("kubejs:fifty_dollar", 5, 12)], Item.of('minecraft:enchanted_book').enchant('enderio:withering', 1))
-
     event.addTrade("cleric", 5, [TradeItem.of("kubejs:fifty_dollar", 5, 12)], Item.of('minecraft:enchanted_book').enchant('minecraft:depth_strider', 3))
     event.addTrade("cleric", 5, [TradeItem.of("kubejs:fifty_dollar", 5, 12)], Item.of('minecraft:enchanted_book').enchant('minecraft:thorns', 4))
     event.addTrade("cleric", 5, [TradeItem.of("kubejs:fifty_dollar", 5, 12)], Item.of('minecraft:enchanted_book').enchant('minecraft:aqua_affinity', 1))
